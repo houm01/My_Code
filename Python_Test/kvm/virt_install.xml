@@ -1,0 +1,11 @@
+<domain type="kvm">
+    <name>ubuntu19.04_test01</name>
+    <memory unit="GiB">4</memory>
+    <vcpu>2</vcpu>
+    <os>
+        <type>hvm</type>
+        <boot dev="cd"
+    </os>
+
+
+</domain>

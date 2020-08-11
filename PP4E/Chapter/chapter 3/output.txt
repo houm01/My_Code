@@ -1,0 +1,4 @@
+Hello stream world
+Enter a number>123 squared is 15129
+Bye
+Enter a number>

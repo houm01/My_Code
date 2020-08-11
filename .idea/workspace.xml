@@ -1,0 +1,1371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="141200d6-6cb9-4058-a30e-60b9e8bab36e" name="Default Changelist" comment="更新 smokeping 使用的脚本">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/My_Code.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/bashsupport_project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mongoSettings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/remote-mappings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/ansible_learning/hello.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/ansible_learning/input_var.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/ansible_learning/inventory" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/ansible_learning/nginx.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/ansible_learning/register_var.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/ansible_learning/tag.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/ansible_learning/test.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/ansible_learning/testvar.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/ansible_learning/var.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/httpd_roles.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/nginx_roles.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/gre.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/gre/defaults/main.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/gre/files/ifcfg-eth0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/gre/files/ifcfg-tun0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/gre/files/keepalived.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/gre/files/route-eth0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/gre/files/route-tun0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/gre/files/zabbix_agentd.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/gre/handlers/main.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/gre/tasks/copy_files.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/gre/tasks/main.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/gre/tasks/modity_config.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/gre/tasks/proxy.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/gre/tasks/sysctl.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/gre/tasks/test.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/gre/tasks/yum.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/gre/vars/main.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/gre_hosts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/httpd/files/httpd.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/httpd/tasks/copyfiles.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/httpd/tasks/main.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/httpd/tasks/user.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/network_device/tasks/collect_config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/network_device/tasks/collect_l2_interface.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/nginx/tasks/group.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/nginx/tasks/main.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/nginx/tasks/restart.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/nginx/tasks/start.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/nginx/tasks/templ.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/nginx/tasks/user.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/nginx/tasks/yum.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/nginx/templates/nginx.conf.j2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/roles/openstack-packstack-init/tasks/main.yaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Ansible/testrole/tasks/main.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /attachgui.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /bob.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /cgi-bin/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /cgi-bin/cgi101.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /cgi-bin/class-shelve" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /cgi-bin/peoplecgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /cgi101.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /class-shelve" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /customizegui.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /dump_db_classes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /dump_db_file.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /dump_db_pickle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /dump_db_pickle_recs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /dump_db_shelve.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /forgoodtime.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /initdata.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /make_db_classes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /make_db_file.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /make_db_pickle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /make_db_pickle_recs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /make_db_shelve.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /manager.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /people-file" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /peoplecgi.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /peoplegui.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /peopleinterace_query.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /peopleinteract_update.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /pepple-shelve" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /person.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /person_alternative.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /person_start.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /sue.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /tkinter001.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /tkinter101.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /tkinter102.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /tkinter103.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /tom.pkl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /update_db_classes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /update_db_file.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /update_db_pickle.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /update_db_pickle_recs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /update_db_shelve.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 1 /webserver.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 2/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 2/more.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 2/traceback_demo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 3/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 3/adder.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 3/adder2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 3/adder3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 3/adderSmall.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 3/data.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 3/echoenv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 3/input.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 3/moreplus.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 3/output.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 3/redirect.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 3/setenv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 3/sorter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 3/sorterSmall.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 3/testargv2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 3/teststreams.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 4/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 4/filters.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 4/lister_recur.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 4/lister_walk.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 4/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 5/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 5/child.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 5/fork-count.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 5/fork-exec.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 5/fork1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 5/queuetest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 5/thread-add-random.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 5/thread-add-synch.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 5/thread-classes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 5/thread-conut-wait2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 5/thread-conut-wait3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 5/thread-count-mytex.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 5/thread-count-wait1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 5/thread-count.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Chapter/chapter 5/thread1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Internet/Sockets/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Internet/Sockets/class-server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Internet/Sockets/echo-client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Internet/Sockets/echo-server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Internet/Sockets/fork-server-signal.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Internet/Sockets/fork-server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Internet/Sockets/getfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Internet/Sockets/getfilegui-1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Internet/Sockets/select-server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Internet/Sockets/signal-demo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Internet/Sockets/testecho.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Internet/Sockets/thread-server.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/Internet/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/System/Exits/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/System/Exits/testexit_fork.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/System/Exits/testexit_os.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/System/Exits/testexit_sys.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/System/Exits/testexit_thread.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/System/Filetools/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/System/Filetools/bigext-tree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/System/Filetools/bigpy-dir.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/System/Filetools/bigpy-path.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/System/Filetools/bigpy-tree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/System/Filetools/join.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/System/Filetools/split.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/System/Processes/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/System/Processes/pipe-thread.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/System/Processes/pipe1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/System/Processes/pipe2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/System/Processes/pipefifo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/System/Processes/pipes-testchild.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/System/Processes/pipes.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/System/Processes/signal1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/System/Processes/signal2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/System/Processes/socket-preview-progs.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/System/Processes/socket_preview.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/System/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/PP4E/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python 3 Standard Library/Excel/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python 3 Standard Library/Excel/openpyxl_learning.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python 3 Standard Library/Runtime Features/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python 3 Standard Library/Runtime Features/os/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python 3 Standard Library/Runtime Features/os/os_directories.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python 3 Standard Library/Runtime Features/os/os_listdir.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python 3 Standard Library/Runtime Features/os/os_scandir.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python 3 Standard Library/Runtime Features/os/os_walk.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python 3 Standard Library/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python-KB/Class/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python-KB/Class/class_demo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python-KB/Class/class_manager.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python-KB/Class/class_person.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python-KB/Class/class_processor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python-KB/Class/class_usage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python-KB/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python-Module/Login_Script.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Python-Module/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shell/11.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shell/242.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shell/clashx_dns.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shell/clear_route.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shell/import_vm.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shell/learn.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shell/openstack_lab2/auto_lamp.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shell/openstack_lab2/backup_sql.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shell/openstack_lab2/for.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shell/openstack_lab2/for_learn.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shell/openstack_lab2/genvm.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shell/openstack_lab2/if2.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shell/openstack_lab2/linux_tool.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shell/openstack_lab2/test.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shell/openstack_lab2/text.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shell/openstack_lab2/until.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shell/openstack_lab2/var.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shell/openstack_lab2/var2.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shell/openstack_lab2/while_learn.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shell/tyun/template.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/compute/neutron/conf.d/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/compute/neutron/dhcp_agent.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/compute/neutron/l3_agent.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/compute/neutron/metadata_agent.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/compute/neutron/neutron.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/compute/neutron/plugins/ml2/openvswitch_agent.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/compute/neutron/rootwrap.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/compute/nova/api-paste.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/compute/nova/migration/authorized_keys" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/compute/nova/migration/identity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/compute/nova/migration/rootwrap.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/compute/nova/migration/rootwrap.d/cold_migration.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/compute/nova/nova.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/compute/nova/policy.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/compute/nova/release" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/compute/nova/rootwrap.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/cinder/api-paste.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/cinder/cinder.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/cinder/resource_filters.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/cinder/rootwrap.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/cinder/rootwrap.d/os-brick.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/glance-api.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/glance-cache.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/glance-image-import.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/glance-registry.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/glance-scrubber.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/glance-swift.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/cim-processor-allocation-setting-data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/cim-resource-allocation-setting-data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/cim-storage-allocation-setting-data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/cim-virtual-system-setting-data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/compute-aggr-disk-filter.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/compute-aggr-iops-filter.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/compute-aggr-num-instances.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/compute-cpu-pinning.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/compute-guest-memory-backing.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/compute-guest-shutdown.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/compute-host-capabilities.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/compute-hypervisor.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/compute-instance-data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/compute-libvirt-image.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/compute-libvirt.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/compute-quota.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/compute-randomgen.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/compute-trust.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/compute-vcputopology.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/compute-vmware-flavor.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/compute-vmware-quota-flavor.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/compute-vmware.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/compute-watchdog.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/compute-xenapi.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/glance-common-image-props.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/image-signature-verification.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/operating-system.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/software-databases.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/software-runtimes.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/software-webservers.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/metadefs/storage-volume-type.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/policy.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/rootwrap.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/rootwrap.d/glance_cinder_store.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/rootwrap.d/os-brick.filters" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/glance/schema-image.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/keystone/default_catalog.templates" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/keystone/fernet-keys/0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/keystone/fernet-keys/1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/keystone/keystone.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/keystone/logging.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/keystone/policy.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/keystone/sso_callback_template.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/neutron/api-paste.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/neutron/conf.d/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/neutron/dhcp_agent.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/neutron/l3_agent.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/neutron/metadata_agent.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/neutron/neutron.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/neutron/plugin.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/neutron/plugins/ml2/ml2_conf.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/neutron/plugins/ml2/sriov_agent.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/neutron/rootwrap.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/nova/api-paste.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/nova/nova.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/nova/policy.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/nova/release" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/nova/rootwrap.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/rabbitmq/inetrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/rabbitmq/rabbitmq-env.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/controller/rabbitmq/rabbitmq.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/network/dnsmasq.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/network/neutron/conf.d/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/network/neutron/dhcp_agent.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/network/neutron/l3_agent.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/network/neutron/metadata_agent.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/network/neutron/metering_agent.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/network/neutron/neutron.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/network/neutron/plugins/ml2/openvswitch_agent.ini" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/network/neutron/rootwrap.conf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/openstack/openstack_config_example/openstack.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_project/SRX_Policy/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_project/SRX_Policy/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_project/SRX_Policy/srx_analysis.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_project/SRX_Policy/srx_json.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_project/cloud_daily_test/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_project/cloud_daily_test/yum.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_project/excel-convert/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_project/excel-convert/excel_convert_database.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_project/ip_test/Targets" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_project/ip_test/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_project/ip_test/begin_text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_project/ip_test/end_text" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_project/ip_test/finally.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_project/ip_test/ip_target.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_project/ip_test/ip_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_project/ip_test/ip_test_mongo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_project/ip_test/mail_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_project/ip_test/sc.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_project/ip_test/text.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_project/ip_test/text111.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_project/ip_test/参考格式" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_project/openconnect_project/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_project/openconnect_project/login_home.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/CCIE_Lab/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/CCIE_Lab/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/CCIE_Lab/config_homework.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/CCIE_Lab/sort_config.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/Dingtalk_demo/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/Dingtalk_demo/dingtalk.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/GUI/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/GUI/tedy.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/GUI/tkfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/Operation and Maintenance/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/Operation and Maintenance/difflib_test/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/Operation and Maintenance/difflib_test/simple1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/Operation and Maintenance/om_test.ipynb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/SecureCRT_script/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/SecureCRT_script/login_example.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/bk_cmdb/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/bk_cmdb/ip_manager.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/crawler/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/crawler/cookie.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/crawler/cookiejar_demo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/crawler/requests_demo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/crawler/selenium_demo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/crawler/shimo_crawler.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/crawler/shimo_login.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/crawler/urllib_demo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/crawler/yun_services.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/crawler_learning/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/crawler_learning/bs4_demo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/crawler_learning/bs_demo2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/crawler_learning/urllib_and_bs4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/docker_api/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/docker_api/docker_api_psql.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/get_hw_esn/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/get_hw_esn/device_list.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/get_hw_esn/get_hw_esn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/huawei_address_set/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/huawei_address_set/huawei_add_set_analysis.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/kamenetest/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/kamenetest/ip_list" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/kamenetest/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/kvm/virt_install.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/mongo_learn/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/mongo_learn/mongo_learn.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/network_assist/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/network_assist/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/network_assist/assist_main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/network_assist/cisco_device/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/network_assist/cisco_device/device_list.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/network_assist/cisco_device/get_cisco_info.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/network_assist/cisco_device/get_cpu_mem.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/network_assist/dell_sw/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/network_assist/dell_sw/dell_sw_assist.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/network_assist/get_device_info.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/notion_api_unoffcical/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/notion_api_unoffcical/notion_demo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/psql_demo/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/psql_demo/psql_get_info.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/re_example/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/re_example/re_method.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/scan/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/scan/ip_scan.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/snmp_script/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/snmp_script/snmp_code.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/snmp_script/snmp_comlansh.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/split_file/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/split_file/split_file.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/web/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/web/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/python_test/web/server_socker.py" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExportToHTMLSettings">
+    <option name="printScope" value="1" />
+    <option name="PRINT_LINE_NUMBERS" value="true" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/exportToHTML" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="Jupyter Notebook" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
+    <envs>
+      <env key="FLASK_APP" value="app" />
+    </envs>
+    <option name="myCustomStartScript" value="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))" />
+    <option name="myEnvs">
+      <map>
+        <entry key="FLASK_APP" value="app" />
+      </map>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JupyterTrust" id="c15bd2f4-23b4-4ebc-b7e4-9ea8683ea89c">
+    <option name="files">
+      <option value="Python 3 Standard Library/Excel/openpyxl_learning.ipynb" />
+      <option value="python_test/Operation and Maintenance/om_test.ipynb" />
+    </option>
+  </component>
+  <component name="ProjectId" id="1QSKUb4ITyNfdT23TScnrL5j2cd" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql&#10;mongo&#10;postgresql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="database.data.extractors.current.id" value="Comma-separated (CSV)_id" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Ansible/roles/gre/files" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
+  </component>
+  <component name="PyConsoleOptionsProvider">
+    <option name="myPythonConsoleState">
+      <console-settings module-name="My_Code" is-module-sdk="true">
+        <option name="myUseModuleSdk" value="true" />
+        <option name="myModuleName" value="My_Code" />
+      </console-settings>
+    </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Ansible/roles" />
+      <recent name="$PROJECT_DIR$/Ansible" />
+      <recent name="$PROJECT_DIR$/Ansible/roles/gre" />
+      <recent name="$PROJECT_DIR$/PP4E/Chapter" />
+      <recent name="$PROJECT_DIR$/PP4E" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Ansible/roles/gre/files" />
+      <recent name="$PROJECT_DIR$/Programming Python" />
+      <recent name="$PROJECT_DIR$/Cloud_Daily_test" />
+      <recent name="$PROJECT_DIR$/ip_test" />
+      <recent name="$PROJECT_DIR$/CCIE_Lab" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.class_manager">
+    <configuration name="class_demo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="My_Code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python-KB/Class" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python-KB/Class/class_demo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="class_manager" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="My_Code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python-KB/Class" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python-KB/Class/class_manager.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="class_person" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="My_Code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python-KB/Class" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python-KB/Class/class_person.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="excel_convert_database" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="My_Code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Project/excel-convert" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Project/excel-convert/excel_convert_database.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="yum" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="My_Code" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Python_Project/cloud_daily_test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Python_Project/cloud_daily_test/yum.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.excel_convert_database" />
+      <item itemvalue="Python.class_demo" />
+      <item itemvalue="Python.yum" />
+      <item itemvalue="Python.class_person" />
+      <item itemvalue="Python.class_manager" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.class_manager" />
+        <item itemvalue="Python.class_person" />
+        <item itemvalue="Python.yum" />
+        <item itemvalue="Python.class_demo" />
+        <item itemvalue="Python.excel_convert_database" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SshConsoleOptionsProvider">
+    <option name="myEncoding" value="UTF-8" />
+    <option name="myConnectionType" value="NONE" />
+    <option name="myConnectionId" value="" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$PROJECT_DIR$/../.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="141200d6-6cb9-4058-a30e-60b9e8bab36e" name="Default Changelist" comment="" />
+      <created>1563288657720</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1563288657720</updated>
+      <workItem from="1563288660086" duration="92000" />
+      <workItem from="1563955734425" duration="4202000" />
+      <workItem from="1564026318363" duration="761000" />
+      <workItem from="1564036956942" duration="7000" />
+      <workItem from="1564655145145" duration="1918000" />
+      <workItem from="1565763511599" duration="568000" />
+      <workItem from="1566056844139" duration="23000" />
+      <workItem from="1566729002253" duration="3353000" />
+      <workItem from="1567758577655" duration="1392000" />
+      <workItem from="1567997228770" duration="11156000" />
+      <workItem from="1568272514458" duration="845000" />
+      <workItem from="1568300923582" duration="3837000" />
+      <workItem from="1568557352780" duration="1007000" />
+      <workItem from="1568559916327" duration="4184000" />
+      <workItem from="1568623869960" duration="14000" />
+      <workItem from="1568624199642" duration="1193000" />
+      <workItem from="1568737693866" duration="1712000" />
+      <workItem from="1568795210938" duration="1257000" />
+      <workItem from="1568814178669" duration="8274000" />
+      <workItem from="1569077331268" duration="1717000" />
+      <workItem from="1569464061484" duration="5546000" />
+      <workItem from="1569516266176" duration="196000" />
+      <workItem from="1569559459687" duration="7749000" />
+      <workItem from="1569644771927" duration="4795000" />
+      <workItem from="1569726950046" duration="2640000" />
+      <workItem from="1569816884770" duration="263000" />
+      <workItem from="1569909799150" duration="2180000" />
+      <workItem from="1569996523471" duration="5397000" />
+      <workItem from="1570015067065" duration="12093000" />
+      <workItem from="1570092915745" duration="521000" />
+      <workItem from="1570185438696" duration="4640000" />
+      <workItem from="1570248581066" duration="683000" />
+      <workItem from="1570527880778" duration="3627000" />
+      <workItem from="1570535921380" duration="7460000" />
+      <workItem from="1570548875257" duration="7507000" />
+      <workItem from="1570708218516" duration="179000" />
+      <workItem from="1570709025468" duration="685000" />
+      <workItem from="1570710806586" duration="6006000" />
+      <workItem from="1571148271880" duration="1892000" />
+      <workItem from="1571384300780" duration="2241000" />
+      <workItem from="1571396322061" duration="3880000" />
+      <workItem from="1571459219849" duration="6450000" />
+      <workItem from="1571491403681" duration="3120000" />
+      <workItem from="1571583738342" duration="8292000" />
+      <workItem from="1571735069098" duration="749000" />
+      <workItem from="1571762161723" duration="2621000" />
+      <workItem from="1571790097867" duration="2606000" />
+      <workItem from="1571836264647" duration="3106000" />
+      <workItem from="1571885214901" duration="7188000" />
+      <workItem from="1571927553270" duration="5328000" />
+      <workItem from="1571993345322" duration="4688000" />
+      <workItem from="1572184067969" duration="3538000" />
+      <workItem from="1572357563218" duration="4133000" />
+      <workItem from="1572443709231" duration="547000" />
+      <workItem from="1572699029871" duration="3236000" />
+      <workItem from="1572938250561" duration="1098000" />
+      <workItem from="1573045972402" duration="3281000" />
+      <workItem from="1573218431803" duration="7725000" />
+      <workItem from="1573263910324" duration="31546000" />
+      <workItem from="1573402657156" duration="610000" />
+      <workItem from="1573438941632" duration="13999000" />
+      <workItem from="1573475204191" duration="2093000" />
+      <workItem from="1573520183144" duration="18000" />
+      <workItem from="1573526287543" duration="47000" />
+      <workItem from="1573651316023" duration="795000" />
+      <workItem from="1573696612593" duration="2502000" />
+      <workItem from="1573834898020" duration="1662000" />
+      <workItem from="1573909510771" duration="598000" />
+      <workItem from="1574170964129" duration="1279000" />
+      <workItem from="1576332070086" duration="3509000" />
+      <workItem from="1576382979611" duration="16959000" />
+      <workItem from="1576466509601" duration="6398000" />
+      <workItem from="1576603641859" duration="2710000" />
+      <workItem from="1576861637245" duration="3462000" />
+      <workItem from="1577116090054" duration="2177000" />
+      <workItem from="1577155961175" duration="430000" />
+      <workItem from="1577463576575" duration="3152000" />
+      <workItem from="1577639037808" duration="1242000" />
+      <workItem from="1577863896950" duration="3000" />
+      <workItem from="1577927121106" duration="1553000" />
+      <workItem from="1578847108093" duration="924000" />
+      <workItem from="1578933295644" duration="950000" />
+      <workItem from="1578965180255" duration="64000" />
+      <workItem from="1579017498149" duration="845000" />
+      <workItem from="1579106084486" duration="603000" />
+      <workItem from="1579144885883" duration="529000" />
+      <workItem from="1579254455493" duration="924000" />
+      <workItem from="1579278840401" duration="687000" />
+      <workItem from="1579488232938" duration="6756000" />
+      <workItem from="1579624052194" duration="628000" />
+      <workItem from="1579680367122" duration="1131000" />
+      <workItem from="1579881311032" duration="1020000" />
+      <workItem from="1580800053244" duration="1308000" />
+      <workItem from="1580811681392" duration="143000" />
+      <workItem from="1580811833199" duration="495000" />
+      <workItem from="1582780736168" duration="7689000" />
+      <workItem from="1582854309949" duration="12459000" />
+      <workItem from="1583126137165" duration="1440000" />
+      <workItem from="1583141210499" duration="1705000" />
+      <workItem from="1583200354335" duration="16840000" />
+      <workItem from="1583226515987" duration="3552000" />
+      <workItem from="1583244751120" duration="283000" />
+      <workItem from="1583251047269" duration="222000" />
+      <workItem from="1583251285040" duration="1119000" />
+      <workItem from="1583372145744" duration="2247000" />
+      <workItem from="1583419621828" duration="156000" />
+      <workItem from="1583419859579" duration="4099000" />
+      <workItem from="1583471857852" duration="394000" />
+      <workItem from="1583511943041" duration="132000" />
+      <workItem from="1583741248206" duration="7411000" />
+      <workItem from="1583759035577" duration="10695000" />
+      <workItem from="1583802401363" duration="9283000" />
+      <workItem from="1583842169016" duration="3550000" />
+      <workItem from="1583857219194" duration="1524000" />
+      <workItem from="1583944454392" duration="2374000" />
+      <workItem from="1583977377903" duration="9041000" />
+      <workItem from="1584030474793" duration="3367000" />
+      <workItem from="1584112675653" duration="28000" />
+      <workItem from="1584289485802" duration="3911000" />
+      <workItem from="1584373694366" duration="1858000" />
+      <workItem from="1584690766425" duration="1171000" />
+      <workItem from="1584880707984" duration="2508000" />
+      <workItem from="1584894816628" duration="420000" />
+      <workItem from="1584939454227" duration="801000" />
+      <workItem from="1585385567618" duration="19000" />
+      <workItem from="1585537054620" duration="535000" />
+      <workItem from="1585746085390" duration="11113000" />
+      <workItem from="1585833201623" duration="622000" />
+      <workItem from="1587965573785" duration="103000" />
+      <workItem from="1587968185983" duration="350000" />
+      <workItem from="1587968583060" duration="38000" />
+      <workItem from="1587981474111" duration="335000" />
+      <workItem from="1587981862843" duration="8000" />
+      <workItem from="1588265833011" duration="53000" />
+      <workItem from="1588333401687" duration="3288000" />
+      <workItem from="1588513316481" duration="1936000" />
+      <workItem from="1588583930238" duration="12133000" />
+      <workItem from="1588609790058" duration="587000" />
+      <workItem from="1588686107494" duration="568000" />
+      <workItem from="1588686813169" duration="274000" />
+      <workItem from="1588690418409" duration="1713000" />
+      <workItem from="1588836664985" duration="180000" />
+      <workItem from="1588854417146" duration="1119000" />
+      <workItem from="1588859458756" duration="1889000" />
+      <workItem from="1588952853340" duration="1795000" />
+      <workItem from="1589030185660" duration="1305000" />
+      <workItem from="1589031562720" duration="5726000" />
+      <workItem from="1589081188204" duration="14901000" />
+      <workItem from="1589208229465" duration="3113000" />
+      <workItem from="1589293796178" duration="5388000" />
+      <workItem from="1589370580557" duration="7483000" />
+      <workItem from="1589462409553" duration="4768000" />
+      <workItem from="1589472230535" duration="2188000" />
+      <workItem from="1589550622849" duration="7361000" />
+      <workItem from="1589631760565" duration="8354000" />
+      <workItem from="1589709986377" duration="2429000" />
+      <workItem from="1589766957740" duration="15000" />
+      <workItem from="1589767181880" duration="934000" />
+      <workItem from="1589817701897" duration="2102000" />
+      <workItem from="1589892039104" duration="70000" />
+      <workItem from="1590068594422" duration="626000" />
+      <workItem from="1590141811507" duration="174000" />
+      <workItem from="1590156714328" duration="32000" />
+      <workItem from="1590321443063" duration="1025000" />
+      <workItem from="1590504528432" duration="43000" />
+      <workItem from="1590817656588" duration="1201000" />
+      <workItem from="1591085536040" duration="378000" />
+      <workItem from="1591162804953" duration="56000" />
+      <workItem from="1591366679863" duration="1307000" />
+      <workItem from="1591368183639" duration="2194000" />
+      <workItem from="1591458010912" duration="1009000" />
+      <workItem from="1591533354283" duration="303000" />
+      <workItem from="1591682080350" duration="4000" />
+      <workItem from="1591976040965" duration="5017000" />
+      <workItem from="1592130528435" duration="7139000" />
+      <workItem from="1592399200939" duration="60000" />
+      <workItem from="1592488265229" duration="6000" />
+      <workItem from="1592660555479" duration="9000" />
+      <workItem from="1593001558465" duration="8461000" />
+      <workItem from="1593161849581" duration="16731000" />
+      <workItem from="1593350090613" duration="5117000" />
+      <workItem from="1593784726232" duration="4523000" />
+      <workItem from="1593842476669" duration="6152000" />
+      <workItem from="1593859735566" duration="2578000" />
+      <workItem from="1593932475206" duration="13594000" />
+      <workItem from="1594023642981" duration="2413000" />
+      <workItem from="1594108613024" duration="1000" />
+      <workItem from="1594133550002" duration="10000" />
+      <workItem from="1594133569834" duration="1314000" />
+      <workItem from="1594217613523" duration="5441000" />
+      <workItem from="1594300347513" duration="3423000" />
+      <workItem from="1594311545258" duration="2804000" />
+      <workItem from="1594398359348" duration="1081000" />
+      <workItem from="1594446981333" duration="5496000" />
+      <workItem from="1594657603860" duration="2055000" />
+      <workItem from="1594712736462" duration="5000" />
+      <workItem from="1594733719755" duration="1190000" />
+      <workItem from="1594738471338" duration="1124000" />
+      <workItem from="1594906909494" duration="2032000" />
+      <workItem from="1594986926329" duration="370000" />
+      <workItem from="1595766800217" duration="216000" />
+      <workItem from="1595773745330" duration="15000" />
+      <workItem from="1595773774449" duration="632000" />
+      <workItem from="1596202318416" duration="3560000" />
+      <workItem from="1596336046012" duration="2000" />
+      <workItem from="1596546184284" duration="482000" />
+      <workItem from="1596866726582" duration="128000" />
+      <workItem from="1596866887735" duration="3527000" />
+      <workItem from="1596882314414" duration="21281000" />
+      <workItem from="1596976052385" duration="743000" />
+      <workItem from="1597141468685" duration="3250000" />
+    </task>
+    <task id="LOCAL-00001" summary="readme commit first">
+      <created>1568302007271</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1568302007271</updated>
+    </task>
+    <task id="LOCAL-00002" summary="readme commit second">
+      <created>1568302543539</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1568302543539</updated>
+    </task>
+    <task id="LOCAL-00003" summary="postgresql and readme commit">
+      <created>1568565542118</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1568565542118</updated>
+    </task>
+    <task id="LOCAL-00004" summary="近期更新汇总">
+      <created>1572186764609</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1572186764609</updated>
+    </task>
+    <task id="LOCAL-00005" summary="snmp_update">
+      <created>1572364513264</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1572364513264</updated>
+    </task>
+    <task id="LOCAL-00006" summary="srx_policy commit">
+      <created>1573311551013</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1573311551013</updated>
+    </task>
+    <task id="LOCAL-00007" summary="srx_policy commit">
+      <created>1573391242364</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1573391242365</updated>
+    </task>
+    <task id="LOCAL-00008" summary="readme update">
+      <created>1573398099104</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1573398099104</updated>
+    </task>
+    <task id="LOCAL-00009" summary="readme update">
+      <created>1573398727714</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1573398727714</updated>
+    </task>
+    <task id="LOCAL-00010" summary="readme update">
+      <created>1573399298845</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1573399298845</updated>
+    </task>
+    <task id="LOCAL-00011" summary="readme update">
+      <created>1573400073627</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1573400073627</updated>
+    </task>
+    <task id="LOCAL-00012" summary="readme update">
+      <created>1573400889468</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1573400889468</updated>
+    </task>
+    <task id="LOCAL-00013" summary="readme and sql update">
+      <created>1573401742417</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1573401742417</updated>
+    </task>
+    <task id="LOCAL-00014" summary="readme update">
+      <created>1573402463496</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1573402463496</updated>
+    </task>
+    <task id="LOCAL-00015" summary="SRX 策略更新">
+      <created>1573835110058</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1573835110058</updated>
+    </task>
+    <task id="LOCAL-00016" summary="readme update">
+      <created>1574170984228</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1574170984228</updated>
+    </task>
+    <task id="LOCAL-00017" summary="CCIE Lab收集配置">
+      <created>1576474362906</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1576474362906</updated>
+    </task>
+    <task id="LOCAL-00018" summary="CCIE Lab收集配置">
+      <created>1576503345167</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1576503345167</updated>
+    </task>
+    <task id="LOCAL-00019" summary="CCIE Lab Q2+ 合并配置">
+      <created>1577467913595</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1577467913596</updated>
+    </task>
+    <task id="LOCAL-00020" summary="CCIE Lab Q2+ 合并配置">
+      <created>1577467976042</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1577467976042</updated>
+    </task>
+    <task id="LOCAL-00021" summary="更新 srx policy">
+      <created>1579145399277</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1579145399277</updated>
+    </task>
+    <task id="LOCAL-00022" summary="更新 smokeping 使用的脚本">
+      <created>1582868613508</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1582868613508</updated>
+    </task>
+    <task id="LOCAL-00023" summary="更新 smokeping 使用的脚本">
+      <created>1583244917543</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1583244917543</updated>
+    </task>
+    <task id="LOCAL-00024" summary="更新 smokeping 使用的脚本">
+      <created>1583772830191</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1583772830191</updated>
+    </task>
+    <task id="LOCAL-00025" summary="更新ansible与python登录脚本">
+      <created>1589710119712</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1589710119712</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="main.yaml" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="readme commit first" />
+    <MESSAGE value="readme commit second" />
+    <MESSAGE value="postgresql and readme commit" />
+    <MESSAGE value="近期更新汇总" />
+    <MESSAGE value="snmp_update" />
+    <MESSAGE value="srx_policy commit" />
+    <MESSAGE value="readme and sql update" />
+    <MESSAGE value="SRX 策略更新" />
+    <MESSAGE value="readme update" />
+    <MESSAGE value="CCIE Lab收集配置" />
+    <MESSAGE value="CCIE Lab Q2+ 合并配置" />
+    <MESSAGE value="更新 srx policy" />
+    <MESSAGE value="更新 smokeping 使用的脚本" />
+    <MESSAGE value="更新ansible与python登录脚本" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新ansible与python登录脚本" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1050" y="439" key="#HTTP_Proxy" timestamp="1588855535430">
+      <screen x="0" y="23" width="2560" height="1344" />
+    </state>
+    <state x="1050" y="439" key="#HTTP_Proxy/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@0.23.2560.1344" timestamp="1588855535430" />
+    <state x="880" y="343" key="#Plugins" timestamp="1596866945702">
+      <screen x="0" y="23" width="2560" height="1344" />
+    </state>
+    <state x="880" y="343" key="#Plugins/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@0.23.2560.1344" timestamp="1596866945702" />
+    <state x="420" y="551" key="#SSH_Configurations" timestamp="1597142560691">
+      <screen x="0" y="23" width="2560" height="1344" />
+    </state>
+    <state x="420" y="551" key="#SSH_Configurations/-1680.413.1680.1027/0.23.2560.1344@0.23.2560.1344" timestamp="1597142560691" />
+    <state x="986" y="354" key="#SSH_Configurations/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@0.23.2560.1344" timestamp="1589033208884" />
+    <state x="2856" y="346" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1594737600125">
+      <screen x="2560" y="23" width="2560" height="1417" />
+    </state>
+    <state x="1054" y="354" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@0.23.2560.1344" timestamp="1589125144313" />
+    <state x="2856" y="346" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@2560.23.2560.1417" timestamp="1594737600125" />
+    <state x="1014" y="504" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1597150250722">
+      <screen x="0" y="23" width="2560" height="1344" />
+    </state>
+    <state x="1014" y="504" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@0.23.2560.1344" timestamp="1597150250722" />
+    <state x="805" y="334" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1596974919424">
+      <screen x="0" y="23" width="2560" height="1344" />
+    </state>
+    <state x="528" y="244" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1680.956@0.23.1680.956" timestamp="1591366778456" />
+    <state x="805" y="334" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@0.23.2560.1344" timestamp="1596974919424" />
+    <state x="857" y="267" key="CommitChangelistDialog2" timestamp="1589710119445">
+      <screen x="0" y="23" width="2560" height="1344" />
+    </state>
+    <state x="857" y="267" key="CommitChangelistDialog2/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@0.23.2560.1344" timestamp="1589710119445" />
+    <state x="85" y="113" width="2360" height="1144" key="DirDiffDialog" timestamp="1597151022655">
+      <screen x="0" y="23" width="2560" height="1344" />
+    </state>
+    <state x="85" y="113" width="2360" height="1144" key="DirDiffDialog/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@0.23.2560.1344" timestamp="1597151022655" />
+    <state x="1190" y="483" key="FileChooserDialogImpl" timestamp="1591533612277">
+      <screen x="0" y="23" width="2560" height="1344" />
+    </state>
+    <state x="1190" y="483" key="FileChooserDialogImpl/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@0.23.2560.1344" timestamp="1591533612277" />
+    <state width="2518" height="533" key="GridCell.Tab.0.bottom" timestamp="1596546666405">
+      <screen x="0" y="23" width="2560" height="1344" />
+    </state>
+    <state width="2518" height="525" key="GridCell.Tab.0.bottom/-1680.413.1680.1027/0.23.2560.1344@0.23.2560.1344" timestamp="1594341673379" />
+    <state width="2518" height="518" key="GridCell.Tab.0.bottom/0.0.2560.1440/5120.0.1680.1050/2560.0.2560.1440@0.0.2560.1440" timestamp="1593941150961" />
+    <state width="1638" height="141" key="GridCell.Tab.0.bottom/0.23.1680.956@0.23.1680.956" timestamp="1591368146201" />
+    <state width="1021" height="836" key="GridCell.Tab.0.bottom/0.23.1680.958@0.23.1680.958" timestamp="1588988437679" />
+    <state width="1638" height="308" key="GridCell.Tab.0.bottom/0.23.1680.960@0.23.1680.960" timestamp="1592399260202" />
+    <state width="2518" height="533" key="GridCell.Tab.0.bottom/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@0.23.2560.1344" timestamp="1596546666405" />
+    <state width="2518" height="564" key="GridCell.Tab.0.bottom/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@2560.23.2560.1417" timestamp="1594469003117" />
+    <state width="2518" height="533" key="GridCell.Tab.0.center" timestamp="1596546666404">
+      <screen x="0" y="23" width="2560" height="1344" />
+    </state>
+    <state width="2518" height="525" key="GridCell.Tab.0.center/-1680.413.1680.1027/0.23.2560.1344@0.23.2560.1344" timestamp="1594341673379" />
+    <state width="2518" height="518" key="GridCell.Tab.0.center/0.0.2560.1440/5120.0.1680.1050/2560.0.2560.1440@0.0.2560.1440" timestamp="1593941150959" />
+    <state width="1638" height="141" key="GridCell.Tab.0.center/0.23.1680.956@0.23.1680.956" timestamp="1591368146201" />
+    <state width="1021" height="836" key="GridCell.Tab.0.center/0.23.1680.958@0.23.1680.958" timestamp="1588988437678" />
+    <state width="1638" height="308" key="GridCell.Tab.0.center/0.23.1680.960@0.23.1680.960" timestamp="1592399260202" />
+    <state width="2518" height="533" key="GridCell.Tab.0.center/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@0.23.2560.1344" timestamp="1596546666404" />
+    <state width="2518" height="564" key="GridCell.Tab.0.center/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@2560.23.2560.1417" timestamp="1594469003116" />
+    <state width="2518" height="533" key="GridCell.Tab.0.left" timestamp="1596546666404">
+      <screen x="0" y="23" width="2560" height="1344" />
+    </state>
+    <state width="2518" height="525" key="GridCell.Tab.0.left/-1680.413.1680.1027/0.23.2560.1344@0.23.2560.1344" timestamp="1594341673379" />
+    <state width="2518" height="518" key="GridCell.Tab.0.left/0.0.2560.1440/5120.0.1680.1050/2560.0.2560.1440@0.0.2560.1440" timestamp="1593941150958" />
+    <state width="1638" height="141" key="GridCell.Tab.0.left/0.23.1680.956@0.23.1680.956" timestamp="1591368146200" />
+    <state width="1021" height="836" key="GridCell.Tab.0.left/0.23.1680.958@0.23.1680.958" timestamp="1588988437678" />
+    <state width="1638" height="308" key="GridCell.Tab.0.left/0.23.1680.960@0.23.1680.960" timestamp="1592399260202" />
+    <state width="2518" height="533" key="GridCell.Tab.0.left/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@0.23.2560.1344" timestamp="1596546666404" />
+    <state width="2518" height="564" key="GridCell.Tab.0.left/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@2560.23.2560.1417" timestamp="1594469003115" />
+    <state width="2518" height="533" key="GridCell.Tab.0.right" timestamp="1596546666404">
+      <screen x="0" y="23" width="2560" height="1344" />
+    </state>
+    <state width="2518" height="525" key="GridCell.Tab.0.right/-1680.413.1680.1027/0.23.2560.1344@0.23.2560.1344" timestamp="1594341673379" />
+    <state width="2518" height="518" key="GridCell.Tab.0.right/0.0.2560.1440/5120.0.1680.1050/2560.0.2560.1440@0.0.2560.1440" timestamp="1593941150960" />
+    <state width="1638" height="141" key="GridCell.Tab.0.right/0.23.1680.956@0.23.1680.956" timestamp="1591368146201" />
+    <state width="1021" height="836" key="GridCell.Tab.0.right/0.23.1680.958@0.23.1680.958" timestamp="1588988437679" />
+    <state width="1638" height="308" key="GridCell.Tab.0.right/0.23.1680.960@0.23.1680.960" timestamp="1592399260202" />
+    <state width="2518" height="533" key="GridCell.Tab.0.right/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@0.23.2560.1344" timestamp="1596546666404" />
+    <state width="2518" height="564" key="GridCell.Tab.0.right/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@2560.23.2560.1417" timestamp="1594469003116" />
+    <state width="2518" height="470" key="GridCell.Tab.1.bottom" timestamp="1593966234706">
+      <screen x="0" y="23" width="2560" height="1344" />
+    </state>
+    <state width="2518" height="518" key="GridCell.Tab.1.bottom/0.0.2560.1440/5120.0.1680.1050/2560.0.2560.1440@0.0.2560.1440" timestamp="1593941150963" />
+    <state width="2518" height="470" key="GridCell.Tab.1.bottom/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@0.23.2560.1344" timestamp="1593966234706" />
+    <state width="2518" height="501" key="GridCell.Tab.1.bottom/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@2560.23.2560.1417" timestamp="1589471930340" />
+    <state width="2518" height="470" key="GridCell.Tab.1.center" timestamp="1593966234706">
+      <screen x="0" y="23" width="2560" height="1344" />
+    </state>
+    <state width="2518" height="518" key="GridCell.Tab.1.center/0.0.2560.1440/5120.0.1680.1050/2560.0.2560.1440@0.0.2560.1440" timestamp="1593941150962" />
+    <state width="2518" height="470" key="GridCell.Tab.1.center/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@0.23.2560.1344" timestamp="1593966234706" />
+    <state width="2518" height="501" key="GridCell.Tab.1.center/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@2560.23.2560.1417" timestamp="1589471930336" />
+    <state width="2518" height="470" key="GridCell.Tab.1.left" timestamp="1593966234706">
+      <screen x="0" y="23" width="2560" height="1344" />
+    </state>
+    <state width="2518" height="518" key="GridCell.Tab.1.left/0.0.2560.1440/5120.0.1680.1050/2560.0.2560.1440@0.0.2560.1440" timestamp="1593941150961" />
+    <state width="2518" height="470" key="GridCell.Tab.1.left/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@0.23.2560.1344" timestamp="1593966234706" />
+    <state width="2518" height="501" key="GridCell.Tab.1.left/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@2560.23.2560.1417" timestamp="1589471930335" />
+    <state width="2518" height="470" key="GridCell.Tab.1.right" timestamp="1593966234706">
+      <screen x="0" y="23" width="2560" height="1344" />
+    </state>
+    <state width="2518" height="518" key="GridCell.Tab.1.right/0.0.2560.1440/5120.0.1680.1050/2560.0.2560.1440@0.0.2560.1440" timestamp="1593941150963" />
+    <state width="2518" height="470" key="GridCell.Tab.1.right/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@0.23.2560.1344" timestamp="1593966234706" />
+    <state width="2518" height="501" key="GridCell.Tab.1.right/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@2560.23.2560.1417" timestamp="1589471930339" />
+    <state width="243" height="457" key="HiddenNamespacesPopup" timestamp="1588859468486">
+      <screen x="0" y="23" width="2560" height="1344" />
+    </state>
+    <state width="243" height="457" key="HiddenNamespacesPopup/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@0.23.2560.1344" timestamp="1588859468486" />
+    <state x="374" y="332" key="SettingsEditor" timestamp="1597143062683">
+      <screen x="0" y="23" width="2560" height="1344" />
+    </state>
+    <state x="374" y="332" key="SettingsEditor/-1680.413.1680.1027/0.23.2560.1344@0.23.2560.1344" timestamp="1597143062683" />
+    <state x="196" y="48" key="SettingsEditor/0.23.1680.956@0.23.1680.956" timestamp="1591368144868" />
+    <state x="696" y="333" key="SettingsEditor/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@0.23.2560.1344" timestamp="1594312061941" />
+    <state x="2627" y="329" key="SettingsEditor/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@2560.23.2560.1417" timestamp="1594739897338" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1593255905965">
+      <screen x="0" y="23" width="2560" height="1344" />
+    </state>
+    <state width="500" height="445" key="SwitcherDM/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@0.23.2560.1344" timestamp="1593255905965" />
+    <state x="880" y="435" key="Vcs.Push.Dialog.v2" timestamp="1589710132373">
+      <screen x="0" y="23" width="2560" height="1344" />
+    </state>
+    <state x="880" y="435" key="Vcs.Push.Dialog.v2/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@0.23.2560.1344" timestamp="1589710132373" />
+    <state x="3742" y="591" key="com.intellij.database.actions.DdlActions$CreateObject$1" timestamp="1594457680895">
+      <screen x="2560" y="23" width="2560" height="1417" />
+    </state>
+    <state x="3742" y="591" key="com.intellij.database.actions.DdlActions$CreateObject$1/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@2560.23.2560.1417" timestamp="1594457680895" />
+    <state x="628" y="422" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1594087210957">
+      <screen x="0" y="23" width="1680" height="956" />
+    </state>
+    <state x="628" y="422" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1680.956@0.23.1680.956" timestamp="1594087210957" />
+    <state x="1033" y="513" width="571" height="374" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration" timestamp="1589033123630">
+      <screen x="0" y="23" width="2560" height="1344" />
+    </state>
+    <state x="1033" y="513" width="571" height="374" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@0.23.2560.1344" timestamp="1589033123630" />
+    <state x="1309" y="438" key="ftp.server.browser" timestamp="1597143055677">
+      <screen x="0" y="23" width="2560" height="1344" />
+    </state>
+    <state x="1309" y="438" key="ftp.server.browser/-1680.413.1680.1027/0.23.2560.1344@0.23.2560.1344" timestamp="1597143055677" />
+    <state x="1309" y="438" key="ftp.server.browser/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@0.23.2560.1344" timestamp="1589033219364" />
+    <state x="945" y="331" width="670" height="642" key="search.everywhere.popup" timestamp="1594301767191">
+      <screen x="0" y="23" width="2560" height="1344" />
+    </state>
+    <state x="945" y="331" width="670" height="642" key="search.everywhere.popup/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@0.23.2560.1344" timestamp="1594301767191" />
+    <state x="3505" y="348" width="670" height="676" key="search.everywhere.popup/0.23.2560.1344/5120.23.1680.1027/2560.23.2560.1417@2560.23.2560.1417" timestamp="1589558017619" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/My_Code$dump_db_file.coverage" NAME="dump_db_file Coverage Results" MODIFIED="1592138581137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 " />
+    <SUITE FILE_PATH="coverage/My_Code$login_all__1_.coverage" NAME="login_all (1) Coverage Results" MODIFIED="1592013492000" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python_project/iTerm2_login" />
+    <SUITE FILE_PATH="coverage/My_Code$echo_client.coverage" NAME="echo-client Coverage Results" MODIFIED="1594220775287" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PP4E/Internet/Sockets" />
+    <SUITE FILE_PATH="coverage/My_Code$cgi101.coverage" NAME="cgi101 Coverage Results" MODIFIED="1593185972803" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 /cgi-bin" />
+    <SUITE FILE_PATH="coverage/My_Code$selenium_demo.coverage" NAME="selenium_demo Coverage Results" MODIFIED="1589464626350" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawler" />
+    <SUITE FILE_PATH="coverage/My_Code$make_db_classes.coverage" NAME="make_db_classes Coverage Results" MODIFIED="1593015367368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 " />
+    <SUITE FILE_PATH="coverage/My_Code$select_server.coverage" NAME="select-server Coverage Results" MODIFIED="1594302134490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PP4E/Internet/Sockets" />
+    <SUITE FILE_PATH="coverage/My_Code$huawei_add_set_analysis.coverage" NAME="huawei_add_set_analysis Coverage Results" MODIFIED="1569464463568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/huawei_address_set" />
+    <SUITE FILE_PATH="coverage/My_Code$update_db_file.coverage" NAME="update_db_file Coverage Results" MODIFIED="1592138111573" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 " />
+    <SUITE FILE_PATH="coverage/My_Code$urllib_and_bs4.coverage" NAME="urllib_and_bs4 Coverage Results" MODIFIED="1569077503561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawler_learning" />
+    <SUITE FILE_PATH="coverage/My_Code$os_walk.coverage" NAME="os_walk Coverage Results" MODIFIED="1593958833144" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/The Python 3 Standard Library by Example/Runtime Features/os" />
+    <SUITE FILE_PATH="coverage/My_Code$login_home.coverage" NAME="login_home Coverage Results" MODIFIED="1589033061321" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/openconnect_project" />
+    <SUITE FILE_PATH="coverage/My_Code$class_demo.coverage" NAME="class_demo Coverage Results" MODIFIED="1594657917349" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python-KB/Class" />
+    <SUITE FILE_PATH="coverage/My_Code$pipefifo.coverage" NAME="pipefifo Coverage Results" MODIFIED="1593945258537" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PP4E/System/Processes" />
+    <SUITE FILE_PATH="coverage/My_Code$teststreams.coverage" NAME="teststreams Coverage Results" MODIFIED="1593350321038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 3" />
+    <SUITE FILE_PATH="coverage/My_Code$peoplegui.coverage" NAME="peoplegui Coverage Results" MODIFIED="1593177269388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 " />
+    <SUITE FILE_PATH="coverage/My_Code$mail_test.coverage" NAME="mail_test Coverage Results" MODIFIED="1583747903633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ip_test" />
+    <SUITE FILE_PATH="coverage/My_Code$yun_services.coverage" NAME="yun_services Coverage Results" MODIFIED="1588690690691" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawler" />
+    <SUITE FILE_PATH="coverage/My_Code$make_db_file.coverage" NAME="make_db_file Coverage Results" MODIFIED="1592138575550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 " />
+    <SUITE FILE_PATH="coverage/My_Code$test.coverage" NAME="test Coverage Results" MODIFIED="1593788708731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 4" />
+    <SUITE FILE_PATH="coverage/My_Code$thread_add_synch.coverage" NAME="thread-add-synch Coverage Results" MODIFIED="1593853985780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 5" />
+    <SUITE FILE_PATH="coverage/My_Code$thread_classes.coverage" NAME="thread-classes Coverage Results" MODIFIED="1593853200709" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 5" />
+    <SUITE FILE_PATH="coverage/My_Code$setenv.coverage" NAME="setenv Coverage Results" MODIFIED="1593263090731" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 3" />
+    <SUITE FILE_PATH="coverage/My_Code$thread_count.coverage" NAME="thread-count Coverage Results" MODIFIED="1593851895148" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 5" />
+    <SUITE FILE_PATH="coverage/My_Code$srx_json.coverage" NAME="srx_json Coverage Results" MODIFIED="1568795966001" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SRX_Policy" />
+    <SUITE FILE_PATH="coverage/My_Code$comlansh_get_sw_info.coverage" NAME="comlansh_get_sw_info Coverage Results" MODIFIED="1576430732706" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/telnet_script" />
+    <SUITE FILE_PATH="coverage/My_Code$dell_sw_assist.coverage" NAME="dell_sw_assist Coverage Results" MODIFIED="1564026709812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/network_assist/dell_sw" />
+    <SUITE FILE_PATH="coverage/My_Code$dump_db_shelve.coverage" NAME="dump_db_shelve Coverage Results" MODIFIED="1593002114823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 " />
+    <SUITE FILE_PATH="coverage/My_Code$get_cisco_info.coverage" NAME="get_cisco_info Coverage Results" MODIFIED="1568014714156" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/network_assist/cisco_device" />
+    <SUITE FILE_PATH="coverage/My_Code$simple1.coverage" NAME="simple1 Coverage Results" MODIFIED="1593860634943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python_test/Operation and Maintenance/difflib_test" />
+    <SUITE FILE_PATH="coverage/My_Code$testexit_sys.coverage" NAME="testexit_sys Coverage Results" MODIFIED="1593939823222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PP4E/System/Exits" />
+    <SUITE FILE_PATH="coverage/My_Code$echo_server.coverage" NAME="echo-server Coverage Results" MODIFIED="1594221258059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PP4E/Internet/Sockets" />
+    <SUITE FILE_PATH="coverage/My_Code$make_db_pickle.coverage" NAME="make_db_pickle Coverage Results" MODIFIED="1592138588478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 " />
+    <SUITE FILE_PATH="coverage/My_Code$config_homework.coverage" NAME="config_homework Coverage Results" MODIFIED="1579881345685" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CCIE_Lab" />
+    <SUITE FILE_PATH="coverage/My_Code$comlansh_get_device_info.coverage" NAME="comlansh_get_device_info Coverage Results" MODIFIED="1572707169678" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/comlansh_device_info" />
+    <SUITE FILE_PATH="coverage/My_Code$bs_demo2.coverage" NAME="bs_demo2 Coverage Results" MODIFIED="1569080142115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawler_learning" />
+    <SUITE FILE_PATH="coverage/My_Code$get_comlansh_snmp_info.coverage" NAME="get_comlansh_snmp_info Coverage Results" MODIFIED="1572185996697" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/snmp_script" />
+    <SUITE FILE_PATH="coverage/My_Code$bigpy_tree.coverage" NAME="bigpy-tree Coverage Results" MODIFIED="1593963491921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PP4E/System/Filetools" />
+    <SUITE FILE_PATH="coverage/My_Code$fork_count.coverage" NAME="fork-count Coverage Results" MODIFIED="1593843179108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 5" />
+    <SUITE FILE_PATH="coverage/My_Code$ip_test.coverage" NAME="ip_test Coverage Results" MODIFIED="1583990926502" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ip_test" />
+    <SUITE FILE_PATH="coverage/My_Code$child.coverage" NAME="child Coverage Results" MODIFIED="1593843692769" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 5" />
+    <SUITE FILE_PATH="coverage/My_Code$testargv2.coverage" NAME="testargv2 Coverage Results" MODIFIED="1593261867427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 3" />
+    <SUITE FILE_PATH="coverage/My_Code$dump_db_pickle.coverage" NAME="dump_db_pickle Coverage Results" MODIFIED="1592140337089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 " />
+    <SUITE FILE_PATH="coverage/My_Code$socket_preview_progs.coverage" NAME="socket-preview-progs Coverage Results" MODIFIED="1593946848780" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PP4E/System/Processes" />
+    <SUITE FILE_PATH="coverage/My_Code$bigpy_path.coverage" NAME="bigpy-path Coverage Results" MODIFIED="1593964611981" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PP4E/System/Filetools" />
+    <SUITE FILE_PATH="coverage/My_Code$login_html.coverage" NAME="login_html Coverage Results" MODIFIED="1589378237575" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Cloud_Daily_test" />
+    <SUITE FILE_PATH="coverage/My_Code$dingtalk.coverage" NAME="dingtalk Coverage Results" MODIFIED="1588594647053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Dingtalk_demo" />
+    <SUITE FILE_PATH="coverage/My_Code$testexit_os.coverage" NAME="testexit_os Coverage Results" MODIFIED="1593939899098" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PP4E/System/Exits" />
+    <SUITE FILE_PATH="coverage/My_Code$tkinter103.coverage" NAME="tkinter103 Coverage Results" MODIFIED="1593172038209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 " />
+    <SUITE FILE_PATH="coverage/My_Code$tedy.coverage" NAME="tedy Coverage Results" MODIFIED="1573454672220" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GUI" />
+    <SUITE FILE_PATH="coverage/My_Code$filters.coverage" NAME="filters Coverage Results" MODIFIED="1593785273815" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 4" />
+    <SUITE FILE_PATH="coverage/My_Code$re_method.coverage" NAME="re_method Coverage Results" MODIFIED="1573313592639" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/re_example" />
+    <SUITE FILE_PATH="coverage/My_Code$person_start.coverage" NAME="person_start Coverage Results" MODIFIED="1593002682029" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 " />
+    <SUITE FILE_PATH="coverage/My_Code$urllib_demo.coverage" NAME="urllib_demo Coverage Results" MODIFIED="1569667740682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawler" />
+    <SUITE FILE_PATH="coverage/My_Code$tkinter101.coverage" NAME="tkinter101 Coverage Results" MODIFIED="1593017852750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 " />
+    <SUITE FILE_PATH="coverage/My_Code$class_server.coverage" NAME="class-server Coverage Results" MODIFIED="1594301600880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PP4E/Internet/Sockets" />
+    <SUITE FILE_PATH="coverage/My_Code$mongo_learn.coverage" NAME="mongo_learn Coverage Results" MODIFIED="1588860394946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/mongo_learn" />
+    <SUITE FILE_PATH="coverage/My_Code$attachgui.coverage" NAME="attachgui Coverage Results" MODIFIED="1593169616504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 " />
+    <SUITE FILE_PATH="coverage/My_Code$fork_server.coverage" NAME="fork-server Coverage Results" MODIFIED="1594222054792" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PP4E/Internet/Sockets" />
+    <SUITE FILE_PATH="coverage/My_Code$thread_conut_wait2.coverage" NAME="thread-conut-wait2 Coverage Results" MODIFIED="1593852632065" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 5" />
+    <SUITE FILE_PATH="coverage/My_Code$initdata.coverage" NAME="initdata Coverage Results" MODIFIED="1592131152866" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 " />
+    <SUITE FILE_PATH="coverage/My_Code$socket_preview.coverage" NAME="socket_preview Coverage Results" MODIFIED="1593946699748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PP4E/System/Processes" />
+    <SUITE FILE_PATH="coverage/My_Code$update_db_shelve.coverage" NAME="update_db_shelve Coverage Results" MODIFIED="1593002105826" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 " />
+    <SUITE FILE_PATH="coverage/My_Code$docker_api_psql.coverage" NAME="docker_api_psql Coverage Results" MODIFIED="1571496317498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/docker_api" />
+    <SUITE FILE_PATH="coverage/My_Code$snmp_comlansh.coverage" NAME="snmp_comlansh Coverage Results" MODIFIED="1572361645824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/snmp_script" />
+    <SUITE FILE_PATH="coverage/My_Code$tkinter001.coverage" NAME="tkinter001 Coverage Results" MODIFIED="1593017644353" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 " />
+    <SUITE FILE_PATH="coverage/My_Code$pipe2.coverage" NAME="pipe2 Coverage Results" MODIFIED="1593941150942" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PP4E/System/Processes" />
+    <SUITE FILE_PATH="coverage/My_Code$login_config.coverage" NAME="login_config Coverage Results" MODIFIED="1589553483429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/iTerm2_login" />
+    <SUITE FILE_PATH="coverage/My_Code$requests_demo.coverage" NAME="requests_demo Coverage Results" MODIFIED="1589463602216" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawler" />
+    <SUITE FILE_PATH="coverage/My_Code$server_socker.coverage" NAME="server_socker Coverage Results" MODIFIED="1570194509491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web" />
+    <SUITE FILE_PATH="coverage/My_Code$sorter.coverage" NAME="sorter Coverage Results" MODIFIED="1593351382256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 3" />
+    <SUITE FILE_PATH="coverage/My_Code$manager.coverage" NAME="manager Coverage Results" MODIFIED="1593003804393" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 " />
+    <SUITE FILE_PATH="coverage/My_Code$dump_db_classes.coverage" NAME="dump_db_classes Coverage Results" MODIFIED="1593016364057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 " />
+    <SUITE FILE_PATH="coverage/My_Code$thread_add_random.coverage" NAME="thread-add-random Coverage Results" MODIFIED="1593860442789" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 5" />
+    <SUITE FILE_PATH="coverage/My_Code$ip_manager.coverage" NAME="ip_manager Coverage Results" MODIFIED="1579498780351" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/bk_cmdb" />
+    <SUITE FILE_PATH="coverage/My_Code$update_db_pickle.coverage" NAME="update_db_pickle Coverage Results" MODIFIED="1592140333434" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 " />
+    <SUITE FILE_PATH="coverage/My_Code$shimo_crawler.coverage" NAME="shimo_crawler Coverage Results" MODIFIED="1568740474669" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/shimo_crawler" />
+    <SUITE FILE_PATH="coverage/My_Code$fork1.coverage" NAME="fork1 Coverage Results" MODIFIED="1593842629937" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 5" />
+    <SUITE FILE_PATH="coverage/My_Code$make_db_pickle_recs.coverage" NAME="make_db_pickle_recs Coverage Results" MODIFIED="1592141385975" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 " />
+    <SUITE FILE_PATH="coverage/My_Code$sort_config.coverage" NAME="sort_config Coverage Results" MODIFIED="1579882295231" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/CCIE_Lab" />
+    <SUITE FILE_PATH="coverage/My_Code$yum__1_.coverage" NAME="yum (1) Coverage Results" MODIFIED="1591533676068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/python_project/cloud_daily_test" />
+    <SUITE FILE_PATH="coverage/My_Code$make_db_shelve.coverage" NAME="make_db_shelve Coverage Results" MODIFIED="1593001791497" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 " />
+    <SUITE FILE_PATH="coverage/My_Code$lister_walk.coverage" NAME="lister_walk Coverage Results" MODIFIED="1593788782660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 4" />
+    <SUITE FILE_PATH="coverage/My_Code$os_directories.coverage" NAME="os_directories Coverage Results" MODIFIED="1593959473778" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/The Python 3 Standard Library by Example/Runtime Features/os" />
+    <SUITE FILE_PATH="coverage/My_Code$getfilegui_1.coverage" NAME="getfilegui-1 Coverage Results" MODIFIED="1594304665811" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PP4E/Internet/Sockets" />
+    <SUITE FILE_PATH="coverage/My_Code$peoplecgi.coverage" NAME="peoplecgi Coverage Results" MODIFIED="1593255190057" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 /cgi-bin" />
+    <SUITE FILE_PATH="coverage/My_Code$class_manager.coverage" NAME="class_manager Coverage Results" MODIFIED="1596546662205" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python-KB/Class" />
+    <SUITE FILE_PATH="coverage/My_Code$moreplus.coverage" NAME="moreplus Coverage Results" MODIFIED="1593352511926" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 3" />
+    <SUITE FILE_PATH="coverage/My_Code$os_listdir.coverage" NAME="os_listdir Coverage Results" MODIFIED="1593957679390" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/The Python 3 Standard Library by Example/Runtime Features/os" />
+    <SUITE FILE_PATH="coverage/My_Code$excel_convert_database.coverage" NAME="excel_convert_database Coverage Results" MODIFIED="1594461198331" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python_Project/excel-convert" />
+    <SUITE FILE_PATH="coverage/My_Code$thread_count_wait1.coverage" NAME="thread-count-wait1 Coverage Results" MODIFIED="1593852410959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 5" />
+    <SUITE FILE_PATH="coverage/My_Code$notion_demo.coverage" NAME="notion_demo Coverage Results" MODIFIED="1571149544214" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/notion_api_unoffcical" />
+    <SUITE FILE_PATH="coverage/My_Code$update_db_pickle_recs.coverage" NAME="update_db_pickle_recs Coverage Results" MODIFIED="1592141681606" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 " />
+    <SUITE FILE_PATH="coverage/My_Code$person.coverage" NAME="person Coverage Results" MODIFIED="1593003097521" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 " />
+    <SUITE FILE_PATH="coverage/My_Code$update_db_classes.coverage" NAME="update_db_classes Coverage Results" MODIFIED="1593016467801" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 " />
+    <SUITE FILE_PATH="coverage/My_Code$thread_count_mytex.coverage" NAME="thread-count-mytex Coverage Results" MODIFIED="1593852197444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 5" />
+    <SUITE FILE_PATH="coverage/My_Code$webserver.coverage" NAME="webserver Coverage Results" MODIFIED="1593255454051" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 " />
+    <SUITE FILE_PATH="coverage/My_Code$thread_conut_wait3.coverage" NAME="thread-conut-wait3 Coverage Results" MODIFIED="1593852907869" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 5" />
+    <SUITE FILE_PATH="coverage/My_Code$queuetest.coverage" NAME="queuetest Coverage Results" MODIFIED="1593854347108" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 5" />
+    <SUITE FILE_PATH="coverage/My_Code$test_analysis.coverage" NAME="test_analysis Coverage Results" MODIFIED="1588953195410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Cloud_Daily_test" />
+    <SUITE FILE_PATH="coverage/My_Code$person_alternative.coverage" NAME="person_alternative Coverage Results" MODIFIED="1593015076561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 " />
+    <SUITE FILE_PATH="coverage/My_Code$pipes.coverage" NAME="pipes Coverage Results" MODIFIED="1593942937328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PP4E/System/Processes" />
+    <SUITE FILE_PATH="coverage/My_Code$psql_get_info.coverage" NAME="psql_get_info Coverage Results" MODIFIED="1572706917813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/psql_demo" />
+    <SUITE FILE_PATH="coverage/My_Code$bigext_tree.coverage" NAME="bigext-tree Coverage Results" MODIFIED="1594217787217" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PP4E/System/Filetools" />
+    <SUITE FILE_PATH="coverage/My_Code$tkfile.coverage" NAME="tkfile Coverage Results" MODIFIED="1573454929024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/GUI" />
+    <SUITE FILE_PATH="coverage/My_Code$dump_db_pickle_recs.coverage" NAME="dump_db_pickle_recs Coverage Results" MODIFIED="1592141687013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 " />
+    <SUITE FILE_PATH="coverage/My_Code$pipe1.coverage" NAME="pipe1 Coverage Results" MODIFIED="1593940742733" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PP4E/System/Processes" />
+    <SUITE FILE_PATH="coverage/My_Code$http_request.coverage" NAME="http_request Coverage Results" MODIFIED="1585833359995" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Cloud_Daily_test" />
+    <SUITE FILE_PATH="coverage/My_Code$class_person.coverage" NAME="class_person Coverage Results" MODIFIED="1596204703483" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python-KB/Class" />
+    <SUITE FILE_PATH="coverage/My_Code$fork_exec.coverage" NAME="fork-exec Coverage Results" MODIFIED="1593843404864" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 5" />
+    <SUITE FILE_PATH="coverage/My_Code$login_all.coverage" NAME="login_all Coverage Results" MODIFIED="1589819707426" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/iTerm2_login" />
+    <SUITE FILE_PATH="coverage/My_Code$forgoodtime.coverage" NAME="forgoodtime Coverage Results" MODIFIED="1593180611309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 " />
+    <SUITE FILE_PATH="coverage/My_Code$testexit_fork.coverage" NAME="testexit_fork Coverage Results" MODIFIED="1593940254119" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PP4E/System/Exits" />
+    <SUITE FILE_PATH="coverage/My_Code$customizegui.coverage" NAME="customizegui Coverage Results" MODIFIED="1593171757874" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 " />
+    <SUITE FILE_PATH="coverage/My_Code$assist_main.coverage" NAME="assist_main Coverage Results" MODIFIED="1573476106479" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/network_assist" />
+    <SUITE FILE_PATH="coverage/My_Code$pipes_testchild.coverage" NAME="pipes-testchild Coverage Results" MODIFIED="1593945256378" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PP4E/System/Processes" />
+    <SUITE FILE_PATH="coverage/My_Code$traceback_demo.coverage" NAME="traceback_demo Coverage Results" MODIFIED="1593260026716" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 2" />
+    <SUITE FILE_PATH="coverage/My_Code$bigpy_dir.coverage" NAME="bigpy-dir Coverage Results" MODIFIED="1593955388380" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PP4E/System/Filetools" />
+    <SUITE FILE_PATH="coverage/My_Code$shimo_login.coverage" NAME="shimo_login Coverage Results" MODIFIED="1569492820436" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/shimo_crawler" />
+    <SUITE FILE_PATH="coverage/My_Code$ip_scan.coverage" NAME="ip_scan Coverage Results" MODIFIED="1583762916845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scan" />
+    <SUITE FILE_PATH="coverage/My_Code$bs4.coverage" NAME="bs4 Coverage Results" MODIFIED="1568815550124" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawler_learning" />
+    <SUITE FILE_PATH="coverage/My_Code$tkinter102.coverage" NAME="tkinter102 Coverage Results" MODIFIED="1593018036199" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 1 " />
+    <SUITE FILE_PATH="coverage/My_Code$more.coverage" NAME="more Coverage Results" MODIFIED="1593259106649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 2" />
+    <SUITE FILE_PATH="coverage/My_Code$srx_analysis.coverage" NAME="srx_analysis Coverage Results" MODIFIED="1579278853443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/SRX_Policy" />
+    <SUITE FILE_PATH="coverage/My_Code$testexit_thread.coverage" NAME="testexit_thread Coverage Results" MODIFIED="1593940420227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/PP4E/System/Exits" />
+    <SUITE FILE_PATH="coverage/My_Code$split_file.coverage" NAME="split_file Coverage Results" MODIFIED="1564656435878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/split_file" />
+    <SUITE FILE_PATH="coverage/My_Code$get_cpu_mem.coverage" NAME="get_cpu_mem Coverage Results" MODIFIED="1568625624696" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/network_assist/cisco_device" />
+    <SUITE FILE_PATH="coverage/My_Code$thread1.coverage" NAME="thread1 Coverage Results" MODIFIED="1593851486167" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Programming Python/chapter 5" />
+    <SUITE FILE_PATH="coverage/My_Code$cookiejar_demo.coverage" NAME="cookiejar_demo Coverage Results" MODIFIED="1589380948980" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/crawler" />
+    <SUITE FILE_PATH="coverage/My_Code$yum.coverage" NAME="yum Coverage Results" MODIFIED="1595767010972" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Python_Project/cloud_daily_test" />
+  </component>
+</project>

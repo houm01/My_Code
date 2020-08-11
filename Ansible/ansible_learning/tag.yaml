@@ -1,0 +1,18 @@
+---
+- hosts: ecs
+  remote_user: root
+  tasks:
+    - name: task1
+      file:
+        path: /root/testdir/t1
+        state: touch
+      tags: t1
+    - name: task2
+      file:
+        path: /root/testdir/t2
+        state: touch
+    - name: task3
+      file:
+        path: /root/testdir/t3
+        state: touch
+      tags: t3

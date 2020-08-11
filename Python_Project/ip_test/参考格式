@@ -1,0 +1,14 @@
++++ dianxin-bj
+menu = 北京电信
+title = Telecom BeiJing
+host = 202.96.199.133
+
++++ dianxin-sh
+menu = Telecom ShangHai
+title = Telecom ShangHai
+host = 202.96.209.133
+
++++ dianxin-tj
+menu = Telecom TianJin
+title = Telecom TianJin
+host = 221.238.6.1

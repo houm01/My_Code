@@ -1,0 +1,15 @@
+---
+- hosts: ecs
+  remote_user: root
+  vars_prompt:
+    - name: "your_name"
+      prompt: "what is your name"
+      private: no   # 输入的信息会显示在屏幕上，如果是输入密码，可以不要这个选项
+    - name: "your_age"
+      prompt: "How old are you"
+      private: no
+
+  tasks:
+    - name: output vars
+      debug:
+        msg: Your name is {{ your_name }}, you are {{ your_age }} years old

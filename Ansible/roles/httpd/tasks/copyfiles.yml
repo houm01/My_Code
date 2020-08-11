@@ -1,0 +1,3 @@
+- name: copy files
+  file: src=httpd.conf dest=/data/ owner=apache 
+

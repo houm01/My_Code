@@ -1,0 +1,23 @@
+---
+- hosts: ecs
+  remote_user: root
+  tasks:
+    - name: install nginx
+      apt:
+        name: nginx
+        state: present
+    - name: Modify the configuration
+      lineinfile:
+        path=/etc/nginx/sites-enabled/default
+        regexp="listen(.*)9088(.*)"
+        line="listen\1 10088 \2"
+        backrefs=yes
+        backup=no
+      notify:
+        restart nginx
+    
+    handlers:
+    - name: restart nginx
+      service:
+        name=nginx
+        state=restarted

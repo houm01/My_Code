@@ -1,0 +1,12 @@
+---
+keepalived_configuration_file: /etc/keepalived/keepalived.conf
+Public_ip: 1.1.1.1
+Public_Netmask: 255.255.255.0
+Tunnel_ip: 172.31.1.1
+Route: 10.1.1.0/24
+Via: 172.31.1.2
+bandwidth: 50
+master_ip: 172.19.10.110
+backup_ip: 172.19.10.111
+
+

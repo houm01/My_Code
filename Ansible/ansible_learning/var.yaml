@@ -1,0 +1,29 @@
+---
+- hosts: ecs
+  vars:
+    testvar1: testfile
+  remote_user: root
+  tasks:
+    - name: task1
+      file:
+        path: /root/testdir/{{ testvar1 }}
+        state: touch
+
+# 以下为示例配置
+
+- hosts: ecs
+  vars:
+    nginx:
+      conf80: /etc/nginx/conf.d/80.conf
+      conf8080: /etc/nginx/conf.d/8080.conf
+
+  tasks:
+    - name: task2
+      file:
+        path: "{{ nginx.conf80 }}"
+        state: touch
+    - name: task3
+      file:
+        path: "{{ nginx.conf8080 }}"
+        state: touch
+

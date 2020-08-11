@@ -1,0 +1,18 @@
+*** Targets ***
+
+probe = FPing
+
+menu = Top
+title = Network Latency Grapher
+remark = Welcome to the SmokePing website of WORKS Company. \
+         Here you will learn all about the latency of our network.
+
+
++ Other # 第一层级
+menu = 国内线路
+title =  国内线路
+++ dianxin #电信
+menu = 电信网络监控
+title = 中国电信
+#host = /Other/dianxin/dianxin-bj /Other/dianxin/dianxin-sh /      Other/dianxin/dianxin-tj
+

@@ -1,0 +1,4 @@
+- name: collect ios config
+  ios_facts:
+    - config
+

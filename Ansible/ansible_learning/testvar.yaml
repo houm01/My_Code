@@ -1,0 +1,13 @@
+---
+- hosts: ecs
+  remote_user: root
+  vars:
+    testvar: testv
+  tasks:
+    - name: debug demo
+      debug:
+        msg: "value of testvar is: {{ testvar }}"
+
+    - name: gathering var test
+      debug:
+        msg: "Remote host distribution information: {{ ansible_distribution }}"  # 经测试这里不能加通配符

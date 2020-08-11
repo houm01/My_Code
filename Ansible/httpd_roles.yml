@@ -1,0 +1,7 @@
+- hosts: webserv
+  remote_user: root
+
+  roles:
+    - role: httpd
+    - role: nginx
+

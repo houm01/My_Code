@@ -1,0 +1,2 @@
+[test_gre]
+172.19.10.110 ansible_ssh_user=root

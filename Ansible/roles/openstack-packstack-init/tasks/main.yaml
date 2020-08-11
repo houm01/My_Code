@@ -1,0 +1,47 @@
+
+---
+- hosts: openstack-111213
+  tasks:
+    - name: ping
+      ping:
+    - name: change name
+      raw: "echo {{hostname|quote}} > /etc/hostname"
+    - name:
+      shell: hostname {{hostname|quote}}
+
+    - name: copy hosts
+      copy:
+        src: /data/ansible/openstack-hosts
+        dest: /etc/hosts
+        owner: root
+        group: root
+        mode: '0644'
+
+    - name: "永久关闭selinux"
+      command: sed -i s/SELINUX=enforcing/SELINUX=disabled/g /etc/selinux/config
+
+    - name: install chrony vim net-tools train
+      yum:
+        name: "{{ packages }}"
+      vars:
+        packages:
+        - chrony
+        - vim
+        - net-tools
+        - centos-release-openstack-train
+        state: present
+
+    - name: upgrade all packages
+      yum:
+        name: '*'
+        state: latest
+
+    - name: install openstackclient
+      yum:
+        name: python-openstackclient
+        state: latest
+
+    - name: reboot
+      command: reboot
+    - name: "等待服务器重启完成"
+      local_action: wait_for host={{ openstack-123 }} search_regex=OpenSSH port=22 timeout=60

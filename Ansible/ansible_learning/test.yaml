@@ -1,0 +1,28 @@
+---
+- hosts: ecs
+  remote_user: root
+  tasks:
+    - name: make testfile1
+      file: 
+          path=/root/testdir/testfile1
+          state=directory
+      notify: ht2
+
+    - meta: flush_handlers
+    
+    - name: make testfile2
+      file:
+        path=/root/testdir/testfile2
+        state=directory
+      notify: ht1
+
+
+  handlers:
+    - name: ht1
+      file:
+        path=/root/testdir/ht1
+        state=touch
+    - name: ht2
+      file: 
+        path=/root/testdir/ht2
+        state=touch

@@ -1,0 +1,29 @@
+- name: copy_eth0
+  copy:
+    src: ifcfg-eth0
+    dest: /etc/sysconfig/network-scripts/
+
+- name: copy_tun0
+  copy:
+    src: ifcfg-tun0
+    dest: /etc/sysconfig/network-scripts/
+
+- name: copy_route_eth0
+  copy:
+    src: route-eth0
+    dest: /etc/sysconfig/network-scripts/
+
+- name: copy_route_tun0
+  copy:
+    src: route-tun0
+    dest: /etc/sysconfig/network-scripts/
+
+#- name: copy_keepalive.conf
+#  copy:
+#    - src: keepalived.conf
+#    - dest: /etc/keepalived/
+
+#- name: copy_zabbix_agent.conf
+#  copy:
+#    - src: zabbix_agentd.conf
+#    - dest: /etc/zabbix/

@@ -1,0 +1,4 @@
+---
+
+- name: sysctl define
+  shell: sysctl -p

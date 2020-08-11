@@ -1,0 +1,7 @@
+- include: group.yml
+- include: user.yml
+- include: yum.yml
+- include: templ.yml
+- include: start.yml
+# 可以调用其他roles的yml
+- include: roles/httpd/tasks/copyfiles.yml

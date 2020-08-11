@@ -1,0 +1,6 @@
+---
+
+- hosts: demo
+  roles:
+    - gre
+    -

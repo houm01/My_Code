@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="houm01db@10.20.99.105" uuid="d83c90cc-eb91-4730-8f73-ce388b4d1853">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://10.20.99.105:5432/houm01db</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="yun_service" uuid="f99d3061-d339-4b6e-bd7c-0d970fdf3ada">
+      <driver-ref>mongo</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.dbschema.MongoJdbcDriver</jdbc-driver>
+      <jdbc-url>mongodb://10.20.99.106:27017/yun_service</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="flask_db" uuid="8a917381-704d-4c5a-a0ed-c81f839e1ff6">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://10.20.99.106:5432/flask_db</jdbc-url>
+    </data-source>
+  </component>
+</project>

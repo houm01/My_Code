@@ -1,0 +1,399 @@
+*** Targets ***
+
+probe = FPing
+
+menu = Top
+title = Network Latency Grapher
+remark = Welcome to the SmokePing website of WORKS Company. \
+         Here you will learn all about the latency of our network.
+
+
++ Other # 第一层级
+menu = 国内线路
+title =  国内线路
+++ dianxin #电信
+menu = 电信网络监控
+title = 中国电信
+#host = /Other/dianxin/dianxin-bj /Other/dianxin/dianxin-sh /      Other/dianxin/dianxin-tj
+
+
++++ dianxin-bj-5199
+menu = 北京北京电信
+title = beijing-beijing-220.181.22.1
+host = 220.181.22.1
++++ dianxin-gd-3670
+menu = 广东深圳电信
+title = guangdong-shenzhen-58.60.3.102
+host = 58.60.3.102
++++ dianxin-fj-3487
+menu = 福建福州电信
+title = fujian-fuzhou-59.56.17.1
+host = 59.56.17.1
++++ dianxin-gz-8319
+menu = 贵州贵阳电信
+title = guizhou-guiyang-58.42.224.1
+host = 58.42.224.1
++++ dianxin-sd-3412
+menu = 山东济南电信
+title = shandong-jinan-58.56.25.4
+host = 58.56.25.4
++++ dianxin-zj-5138
+menu = 浙江杭州电信
+title = zhejiang-hangzhou-60.176.0.1
+host = 60.176.0.1
++++ dianxin-sc-746
+menu = 四川成都电信
+title = sichuan-chengdu-61.139.37.1
+host = 61.139.37.1
++++ dianxin-gx-3993
+menu = 广西南宁电信
+title = guangxi-nanning-58.59.133.1
+host = 58.59.133.1
++++ dianxin-ah-457
+menu = 安徽合肥电信
+title = anhui-hefei-60.168.0.1
+host = 60.168.0.1
++++ dianxin-js-6896
+menu = 江苏南京电信
+title = jiangsu-nanjing-180.101.49.12
+host = 180.101.49.12
++++ dianxin-hlj-6724
+menu = 黑龙江哈尔滨电信
+title = heilongjiang-haerbin-219.147.130.84
+host = 219.147.130.84
++++ dianxin-jx-2481
+menu = 江西南昌电信
+title = jiangxi-nanchang-59.52.4.1
+host = 59.52.4.1
++++ dianxin-tj-8091
+menu = 天津天津电信
+title = tianjin-tianjin-221.238.6.1
+host = 221.238.6.1
++++ dianxin-nmg-3686
+menu = 内蒙古呼和浩特电信
+title = neimenggu-huhehaote-42.123.87.32
+host = 42.123.87.32
++++ dianxin-yn-9432
+menu = 云南昆明电信
+title = yunnan-kunming-43.228.77.84
+host = 43.228.77.84
++++ dianxin-nx-7449
+menu = 宁夏银川电信
+title = ningxia-yinchuan-36.103.242.232
+host = 36.103.242.232
++++ dianxin-hb-7140
+menu = 河北石家庄电信
+title = hebei-shijiazhuang-124.239.149.191
+host = 124.239.149.191
++++ dianxin-sx-4406
+menu = 陕西西安电信
+title = shanxi-xian-117.33.224.190
+host = 117.33.224.190
++++ dianxin-hn-3338
+menu = 海南海口电信
+title = hainan-haikou-124.225.69.228
+host = 124.225.69.228
++++ dianxin-xz-8106
+menu = 西藏拉萨电信
+title = xizang-lasa-124.31.0.1
+host = 124.31.0.1
++++ dianxin-jl-5561
+menu = 吉林长春电信
+title = jilin-changchun-123.173.127.2
+host = 123.173.127.2
++++ dianxin-sx-7761
+menu = 山西太原电信
+title = shanxi-taiyuan-1.71.136.111
+host = 1.71.136.111
++++ dianxin-hn-7721
+menu = 湖南长沙电信
+title = hunan-changsha-124.232.150.1
+host = 124.232.150.1
++++ dianxin-gs-4046
+menu = 甘肃兰州电信
+title = gansu-lanzhou-125.74.55.41
+host = 125.74.55.41
++++ dianxin-xj-2112
+menu = 新疆乌鲁木齐电信
+title = xinjiang-wulumuqi-106.124.137.214
+host = 106.124.137.214
++++ dianxin-qh-403
+menu = 青海西宁电信
+title = qinghai-xining-61.133.237.1
+host = 61.133.237.1
++++ dianxin-hb-9743
+menu = 湖北武汉电信
+title = hubei-wuhan-58.49.233.152
+host = 58.49.233.152
++++ dianxin-sh-3636
+menu = 上海上海电信
+title = shanghai-shanghai-202.96.209.133
+host = 202.96.209.133
++++ dianxin-ln-9820
+menu = 辽宁沈阳电信
+title = liaoning-shenyang-123.246.129.83
+host = 123.246.129.83
++++ liantong-bj-6916
+menu = 北京北京联通
+title = beijing-beijing-202.96.18.1
+host = 202.96.18.1
++++ liantong-gd-1527
+menu = 广东深圳联通
+title = guangdong-shenzhen-58.250.0.1
+host = 58.250.0.1
++++ liantong-fj-7563
+menu = 福建福州联通
+title = fujian-fuzhou-58.22.96.1
+host = 58.22.96.1
++++ liantong-gz-6036
+menu = 贵州贵阳联通
+title = guizhou-guiyang-58.16.28.1
+host = 58.16.28.1
++++ liantong-sd-4562
+menu = 山东济南联通
+title = shandong-jinan-123.129.217.13
+host = 123.129.217.13
++++ liantong-zj-3989
+menu = 浙江杭州联通
+title = zhejiang-hangzhou-121.52.235.148
+host = 121.52.235.148
++++ liantong-sc-5665
+menu = 四川成都联通
+title = sichuan-chengdu-119.6.6.6
+host = 119.6.6.6
++++ liantong-gx-6171
+menu = 广西南宁联通
+title = guangxi-nanning-211.97.81.139
+host = 211.97.81.139
++++ liantong-ah-9348
+menu = 安徽合肥联通
+title = anhui-hefei-220.195.166.46
+host = 220.195.166.46
++++ liantong-js-7796
+menu = 江苏南京联通
+title = jiangsu-nanjing-218.104.118.33
+host = 218.104.118.33
++++ liantong-hn-193
+menu = 湖南长沙联通
+title = hunan-changsha-103.38.43.119
+host = 103.38.43.119
++++ liantong-gs-3305
+menu = 甘肃兰州联通
+title = gansu-lanzhou-221.7.34.1
+host = 221.7.34.1
++++ liantong-xj-8680
+menu = 新疆乌鲁木齐联通
+title = xinjiang-wulumuqi-124.88.63.3
+host = 124.88.63.3
++++ liantong-qh-7579
+menu = 青海西宁联通
+title = qinghai-xining-221.207.27.1
+host = 221.207.27.1
++++ liantong-hb-7196
+menu = 湖北武汉联通
+title = hubei-wuhan-218.106.115.1
+host = 218.106.115.1
++++ liantong-sh-9509
+menu = 上海上海联通
+title = shanghai-shanghai-211.95.72.254
+host = 211.95.72.254
++++ liantong-gd-9465
+menu = 广东广州联通
+title = guangdong-guangzhou-221.5.88.88
+host = 221.5.88.88
++++ liantong-cq-2321
+menu = 重庆重庆联通
+title = chongqing-chongqing-113.207.32.70
+host = 113.207.32.70
++++ yidong-bj-9620
+menu = 北京北京移动
+title = beijing-beijing-221.130.33.1
+host = 221.130.33.1
++++ yidong-gd-494
+menu = 广东深圳移动
+title = guangdong-shenzhen-211.136.22.50
+host = 211.136.22.50
++++ yidong-fj-6313
+menu = 福建福州移动
+title = fujian-fuzhou-211.138.132.1
+host = 211.138.132.1
++++ yidong-gz-2230
+menu = 贵州贵阳移动
+title = guizhou-guiyang-211.139.0.10
+host = 211.139.0.10
++++ yidong-sd-451
+menu = 山东济南移动
+title = shandong-jinan-114.114.114.114
+host = 114.114.114.114
++++ yidong-zj-9381
+menu = 浙江杭州移动
+title = zhejiang-hangzhou-211.140.0.2
+host = 211.140.0.2
++++ yidong-sc-5759
+menu = 四川成都移动
+title = sichuan-chengdu-218.205.231.1
+host = 218.205.231.1
++++ yidong-gx-1794
+menu = 广西南宁移动
+title = guangxi-nanning-211.138.245.1
+host = 211.138.245.1
++++ yidong-ah-5702
+menu = 安徽合肥移动
+title = anhui-hefei-112.30.132.5
+host = 112.30.132.5
++++ yidong-js-7753
+menu = 江苏南京移动
+title = jiangsu-nanjing-120.195.118.1
+host = 120.195.118.1
++++ yidong-hlj-796
+menu = 黑龙江哈尔滨移动
+title = heilongjiang-haerbin-211.137.252.254
+host = 211.137.252.254
++++ yidong-jx-4135
+menu = 江西南昌移动
+title = jiangxi-nanchang-218.204.68.41
+host = 218.204.68.41
++++ yidong-tj-8313
+menu = 天津天津移动
+title = tianjin-tianjin-211.137.160.1
+host = 211.137.160.1
++++ yidong-nmg-9238
+menu = 内蒙古呼和浩特移动
+title = neimenggu-huhehaote-218.202.81.62
+host = 218.202.81.62
++++ yidong-yn-1638
+menu = 云南昆明移动
+title = yunnan-kunming-218.206.32.255
+host = 218.206.32.255
++++ yidong-sd-2637
+menu = 山东青岛移动
+title = shandong-qingdao-218.201.98.33
+host = 218.201.98.33
++++ yidong-gd-6243
+menu = 广东广州移动
+title = guangdong-guangzhou-112.35.1.99
+host = 112.35.1.99
++++ yidong-cq-9333
+menu = 重庆重庆移动
+title = chongqing-chongqing-218.201.39.204
+host = 218.201.39.204
+
++ Internet
+menu = 国际线路
+title = 国际线路
+        
+++ Tokyo-Japan
+menu = 日本东京
+title = Tokyo-Japan-85.208.213.177
+host = 85.208.213.177
+++ Seoul-Korea
+menu = 韩国首尔
+title = Seoul-Korea-52.78.58.99
+host = 52.78.58.99
+++ Moscow-Russia
+menu = 俄罗斯莫斯科
+title = Moscow-Russia-162.62.19.149
+host = 162.62.19.149
+++ London-England
+menu = 英国伦敦
+title = London-England-51.140.6.36
+host = 51.140.6.36
+++ Seattle-USA
+menu = 美国西雅图
+title = Seattle-USA-108.61.194.219
+host = 108.61.194.219
+++ Sao-Paulo-Brazil
+menu = 巴西圣保罗
+title = Sao-Paulo-Brazil-181.215.238.92
+host = 181.215.238.92
+++ Johannesburg-South-Africa
+menu = 南非约韩内斯堡
+title = Johannesburg-South-Africa-154.127.63.242
+host = 154.127.63.242
+++ NewYork-USA
+menu = 美国纽约
+title = NewYork-USA-114.114.114.114
+host = 114.114.114.114
++ InternetSites
+
+menu = Internet Sites
+title = Internet Sites
+
+++ Pythonorg
+menu = Python
+title = Python.org
+host = www.python.org
+
+++ OpenStack
+menu = OpenStack
+title = OpenStack
+host = www.openstack.org
+
+++ JupiterBroadcasting
+menu = JupiterBroadcasting
+title = JupiterBroadcasting
+host = jupiterbroadcasting.com
+
+++ GoogleSearch
+menu = Google
+title = google.com
+host = google.com
+
+++ linuxserverio
+menu = linuxserver.io
+title = linuxserver.io
+host = linuxserver.io
+
++ DNS
+menu = DNS
+title = DNS
+
+++ GoogleDNS1
+menu = Google DNS 1
+title = Google DNS 8.8.8.8
+host = 8.8.8.8
+
+++ GoogleDNS2
+menu = Google DNS 2
+title = Google DNS 8.8.4.4
+host = 8.8.4.4
+
+++ OpenDNS1
+menu = OpenDNS1
+title = OpenDNS1
+host = 208.67.222.222
+
+++ OpenDNS2
+menu = OpenDNS2
+title = OpenDNS2
+host = 208.67.220.220
+
+++ CloudflareDNS1
+menu = Cloudflare DNS 1
+title = Cloudflare DNS 1.1.1.1
+host = 1.1.1.1
+
+++ CloudflareDNS2
+menu = Cloudflare DNS 2
+title = Cloudflare DNS 1.0.0.1
+host = 1.0.0.1
+
+++ 114DNS1
+menu = 114 DNS1
+title = 114 DNS 114.114.114.114
+host = 114.114.114.114
+
+++ 114DNS2
+menu = 114 DNS2
+title = 114 DNS 114.114.115.115
+host = 114.114.115.115
+
+++ aliyunDNS1
+menu = aliyun DNS2
+title = aliyun DNS 223.5.5.5
+host = 223.5.5.5
+
+++ aliyunDNS2
+menu = aliyun DNS2
+title = aliyun DNS 223.6.6.6
+host = 223.6.6.6

@@ -1,0 +1,6 @@
+---
+- name: restart keepalived
+  service:
+    name: keepalived
+    state: restart
+  when: service_default_state | default('statred') == 'started'

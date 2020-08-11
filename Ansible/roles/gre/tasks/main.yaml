@@ -1,0 +1,6 @@
+---
+
+- include: copy_files.yaml
+- include: proxy.yaml
+- include: yum.yaml
+- include: modity_config.yaml

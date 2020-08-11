@@ -1,0 +1,4 @@
+- hosts: 802
+  remote_user: root
+  roles:
+    - nginx

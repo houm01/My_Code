@@ -1,0 +1,50 @@
+---
+
+- name: Monity Eth0
+  replace:
+    path: /etc/sysconfig/network-scripts/ifcfg-eth0
+    after: 'IPADDR='
+    before: ''
+    regexp: '2.2.2.2'
+    replace: "{{ Public_ip }}"
+
+- name: modity ipv4.forward
+  blockinfile:
+    path: /etc/sysctl.conf
+    block: net.ipv4.ip_forward = 1
+
+- name: modity rc.local
+  blockinfile:
+    path: /etc/rc.local
+    block: |
+      tcset eth0 --rate {{ bandwidth }}mbps --direction outgoing
+      tcset eth0 --rate {{ bandwidth }}mbps --direction incoming
+
+- name: modity keepalived unicast_src_ip
+  replace:
+    path: /etc/keepalived/keepalived.conf
+    after: 'unicast_src_ip'
+    regexp: '10.20.9.16'
+    replace: "{{ master_ip }}"
+
+# 这里需要做判断
+- name: modity keepalived unicast_peer
+  replace:
+    path: /etc/keepalived/keepalived.conf
+    after: 'unicast_peer {'
+    regexp: '10.20.9.15'
+    replace: "{{ backup_ip }}"
+
+- name: modity keepalived virtual_ipaddress
+  replace:
+    path: /etc/keepalived/keepalived.conf
+    after: 'virtual_ipaddress {'
+    regexp: '116.211.58.213'
+    replace: "{{ public_ip }}"
+
+- name: modity keepalived virtual_routes
+  replace:
+    path: /etc/keepalived/keepalived.conf
+    after: 'default via 116.211.58.254 src '
+    regexp: '116.211.58.213'
+    replace: "{{ public_ip }}"
