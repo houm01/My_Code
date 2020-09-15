@@ -5,34 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="141200d6-6cb9-4058-a30e-60b9e8bab36e" name="Default Changelist" comment="更新 smokeping 使用的脚本">
-      <change afterPath="$PROJECT_DIR$/.vscode/sftp.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ansible/playbook_box/a.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ansible/playbook_box/install_vsftpd.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Ansible/playbook_box/os_init.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-CookBook/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-CookBook/chapter11-network and web program/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-CookBook/chapter11-network and web program/request_demo.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-CookBook/chapter11-network and web program/tcp_server.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-CookBook/chapter11-network and web program/tcp_server2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python-CookBook/chapter11-network and web program/url_request.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Python_Project/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shell/color_print.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shell/func_demo1.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shell/os_status.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shell/test1.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shell/test2.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Shell/test3.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/My_Code.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/My_Code.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sshConfigs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ansible/nginx_roles.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Ansible/nginx_roles.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Ansible/roles/gre/tasks/modity_config.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Ansible/roles/gre/tasks/modity_config.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python-Module/Login_Script.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Python_Project/cloud_daily_test/yum.py" beforeDir="false" afterPath="$PROJECT_DIR$/Python_Project/cloud_daily_test/yum.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Shell/11.sh" beforeDir="false" afterPath="$PROJECT_DIR$/Shell/11.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shell/P1. 01.了解jQuery(1).mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shell/P2. 02.jQuery的基本使用(2).mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shell/P3. 03.jQuery的2把利器(3).mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shell/P4. 04.jQuery函数的使用(4).mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shell/P5. 05.jQuery对象的使用(5).mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shell/P6. 06.基本选择器(26).mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shell/P7. 07.层次选择器(7).mp4" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Shell/P8. 08.过滤选择器(128).mp4" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -549,6 +530,7 @@
       <workItem from="1599990568297" duration="5072000" />
       <workItem from="1600010803260" duration="205000" />
       <workItem from="1600090812682" duration="292000" />
+      <workItem from="1600158776875" duration="737000" />
     </task>
     <task id="LOCAL-00001" summary="readme commit first">
       <created>1568302007271</created>
