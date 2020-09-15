@@ -1,0 +1,5 @@
+---
+# tasks file for openstack-installation
+
+
+- include: os_init.yml

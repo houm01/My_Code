@@ -1,0 +1,7 @@
+---
+
+- name: change hostname
+  raw: "echo {{ hostname|quote }} > /etc/hostname"
+
+- name: display hostname
+  shell: hostname 
