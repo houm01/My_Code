@@ -9,6 +9,13 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="dev-CentOS7.6">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/houmingming" local="$PROJECT_DIR$/Shell/tyun" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="home-802">
         <serverdata>
           <mappings>

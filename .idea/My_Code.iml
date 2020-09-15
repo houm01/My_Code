@@ -8,6 +8,7 @@
       <excludeFolder url="file://$MODULE_DIR$/.idea/dataSources" />
       <excludeFolder url="file://$MODULE_DIR$/Python_Project/cloud_daily_test/html" />
       <excludeFolder url="file://$MODULE_DIR$/Python_Project/iTerm2_login" />
+      <excludeFolder url="file://$MODULE_DIR$/Shell/tyun" />
     </content>
     <orderEntry type="jdk" jdkName="Python 3.7" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />

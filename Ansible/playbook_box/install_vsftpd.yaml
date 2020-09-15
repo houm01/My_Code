@@ -1,0 +1,10 @@
+
+---
+
+- name: run script
+  hosts: dev
+  gather_facts: false
+  tasks:
+    - name: "run vsftpd.sh"
+      script: /Users/houmingming/My_Code/Shell/tyun/install_vsftpd.sh
+

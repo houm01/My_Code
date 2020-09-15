@@ -16,6 +16,13 @@
           </advancedOptions>
         </fileTransfer>
       </webServer>
+      <webServer id="b37c7581-3382-4ad5-ade0-3585cbb09d5b" name="dev-CentOS7.6">
+        <fileTransfer rootFolder="/root" accessType="SFTP" host="10.20.3.155" port="22" sshConfigId="5ac92384-5169-4f9b-9d48-f9dc38acaf4f" sshConfig="dev-CentOS7.6">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
     </option>
   </component>
 </project>

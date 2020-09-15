@@ -1,0 +1,316 @@
+---
+
+#- name: configure ssh connection
+#  hosts: ecs
+#  gather_facts: false
+#  connection: local
+#  tasks:
+#    - name: configure ssh connection
+#      shell: |
+#        ssh-keyscan {{ inventory_hostname }} >> ~/.ssh/known_hosts
+#        sshpass -p'123456' ssh-copy-id root@{{ inventory_hostname }}
+
+
+#- name: config ssh connection
+#  hosts: ecs
+#  gather_facts: false
+#  tasks:
+#    - authorized_key:
+#        key: "{{lookup('file', '~/.ssh/id_rsa.pub')}}"
+#        state: present
+#        user: root
+
+
+#- name: debug fileglob
+#  hosts: ecs
+#  gather_facts: false
+#  tasks:
+#    - name: task1
+#      debug:
+#        msg: "filenames: {{query('fileglob','/etc/*.conf', wantlist=True)}}"
+
+#    - name: task2
+#      debug:
+#        msg: "file connect: {{lookup('file','/etc/hosts')}}"
+
+#    - name: task3
+#      debug:
+#        msg: "command res: {{lookup('pipe', 'cat /etc/hosts', wantlist=True)}}"
+
+#- name: set hostname
+#  hosts: drbd
+#  gather_facts: false
+#  vars:
+#    hostnames:
+#      - host: 172.19.10.110
+#        name: new1
+#      - host: 172.19.10.111
+#        name: new2
+#  tasks:
+#    - debug:
+#        var: hostnames[0].name
+#    - debug:
+#        var: hostnames[0].host
+
+#    - name: set hostname
+#      hostname:
+#        name: "{{item.name}}"
+#      when: item.host == inventory_hostname
+#      loop: "{{hostnames}}"
+
+
+
+#- name: play1
+#  hosts: localhost
+#  gather_facts: false
+#  vars:
+#    - var1: "value1"
+#  tasks:
+#    - name: access value1
+#      debug:
+#        msg: "var1's value: {{var1}}"
+#
+#- name: play2
+#  hosts: localhost
+#  gather_facts: false
+#  tasks:
+#    - name: "can't access vars from play1"
+#      debug:
+#        var: var1
+#
+#    - name: set and access var2 in this task
+#      debug:
+#        var: var2
+#      vars:
+#        var2: "value2"
+#
+#    - name: can't access var2 in this task
+#      debug:
+#        var: var2
+
+#- name: play1
+#  hosts: drbd
+#  gather_facts: false
+#  vars:
+#    - myname: "houm01"
+#  tasks:
+#    - name: task will skip
+#      debug:
+#        msg: "myname is: {{myname}}"
+#      when: myname == "demo"
+#    - name: task will execute
+#      debug:
+#        msg: "myname is: {{myname}}"
+#      when: myname == "houm01"
+#    - name: limit host exec
+#      debug:
+#        msg: "my name is: {{myname}}"
+#      when: inventory_hostname == "172.19.10.110"
+
+#- name: play2
+#  hosts: localhost
+#  gather_facts: false
+#  tasks:
+#    - name: create directories
+#      file:
+#        path: "{{item}}"
+#        state: directory
+#      loop:
+#        - /Users/houmingming/Downloads/test2
+#        - /Users/houmingming/Downloads/test3
+
+
+#- name: set hostname
+#  hosts: drbd
+#  gather_facts: false
+#  vars:
+#    hostnames:
+#      - host: 172.19.10.110
+#        name: demo1
+#      - host: 172.19.10.111
+#        name: demo2
+#  tasks:
+#    - name: set hostname
+#      hostname:
+#        name: "{{item.name}}"
+#      when: item.host == inventory_hostname
+#      loop: "{{hostnames}}"
+
+#- name: add dns for each
+#  hosts: drbd
+#  gather_facts: true
+#  tasks:
+#    - name: add dns
+#      lineinfile:
+#        path: "/etc/hosts"
+#        line: "{{item}} {{hostvars[item].ansible_hostname}}"
+#      when: item != inventory_hostname
+#      loop: "{{ play_hosts }}"
+
+#- name: test inlinefile
+#  hosts: localhost
+#  gather_facts: false
+#  tasks:
+##    - lineinfile:
+##        path: "a.txt"
+##        line: "LINE2"
+##        insertbefore: '^para.*2'
+##    - lineinfile:
+##        path: "a.txt"
+##        line: "demo1"
+##        regexp: '^para.*2'
+#    - lineinfile:
+#        path: "a.txt"
+#        line: "hello line"
+#        regexp: '^hello'
+#        insertbefore: '^para.* 1'
+
+#- name: test vars
+#  hosts: drbd
+#  gather_facts: true
+#  tasks:
+#    - debug:
+#        msg: "hello world"
+#      when: hostvars['172.19.10.110'].ansible_hostname == "demo1"
+
+#- name: config yum repo and install software
+#  hosts: drbd
+#  gather_facts: false
+#  tasks:
+#    - name: backup origin yum repos
+#      shell:
+#        cmd: "mkdir bak; mv *.repo bak"
+#        chdir: /etc/yum.repos.d
+#        creates: /etc/yum.repos.d/bak
+#
+#    - name: add os repo and epel repo
+#      yum_repository:
+#        name: "{{item.name}}"
+#        description: "{{item.name}} repo"
+#        baseurl: "{{item.baseurl}}"
+#        file: "{{item.name}}"
+#        enabled: 1
+#        gpgcheck: 0
+#        reposdir: /etc/yum.repos.d
+#      loop:
+#        - name: os
+#          baseurl: "https://mirrors.tuna.tsinghua.edu.cn/centos/$releasever/os/$basearch"
+#        - name: epel
+#          baseurl: "https://mirrors.tuna.tsinghua.edu.cn/epel/$releasever/os/$basearch"
+#
+#    - name: install pkgs
+#      yum:
+#        name: lrzsz,vim,dos2unix,wget,curl
+#        state: present
+
+#- name: sync time
+#  hosts: drbd
+#  gather_facts: false
+#  tasks:
+#    - name: install and sync time
+#      block:
+#        - name: install ntpdate
+#          yum:
+#            name: ntpdate
+#            state: present
+#        - name: ntpdate to sync time
+#          shell: |
+#            ntpdate ntp1.aliyun.com
+#            hwclock -w
+
+#- name: disable selinux
+#  hosts: drbd
+#  gather_facts: false
+#  tasks:
+#    - block:
+#      - name: disable on the fly
+#        shell: setenforce 0
+#
+#
+#      - name: disable forever in config
+#        lineinfile:
+#          path: /etc/selinux/config
+#          line: "SELINUX=disabled"
+#          regexp: '^SELINUX='
+#
+#      ignore_errors: true
+
+#- name: disable selinux
+#  hosts: drbd
+#  gather_facts: false
+#  tasks:
+#    - block:
+#        - shell: ls /tmp/a.log
+#          ignore_errors: true
+#        - shell: ls /tmp/b.log
+#          ignore_errors: true
+
+#- name: set firewall
+#  hosts: drbd
+#  gather_facts: false
+#  tasks:
+#    - name: set iptables rule
+#      shell: |
+#        iptables-save > /tmp/iptables.bak$(date +"%F_%T")
+#        iptables -X
+#        iptables -F
+#        iptables -Z
+#
+#        iptables -A INPUT -i lo -j ACCEPT
+#        iptables -A INPUT -p icmp -j ACCEPT
+
+#- name: set firewall
+#  hosts: drbd
+#  gather_facts: false
+#  vars:
+#    allowed_tcp_ports: [22,80,443]
+#    default_policies:
+#      INPUT: DROP
+#      FORWARD: DROP
+#      OUTPUT: ACCEPT
+#    user_iptables_rule:
+#      - iptables -A INPUT -p tcp -m tcp --dport 8000 -j ACCEPT
+#      - iptables -A INPUT -p tcp -m tcp --dport 8080 -j ACCEPT
+#  tasks:
+#    - block:
+#        - name: backup and empty rules
+#          shell: |
+#            iptables-save > /tmp/iptables.bak$(date +"%F-%T")
+#            iptables -X
+#            iptables -F
+#            iptables -Z
+#        - name: green light for lo interface and icmp protocol
+#          shell: |
+#            iptables -A INPUT -i lo -j ACCEPT
+#            iptables -A INPUT -p icmp -j ACCEPT
+#            iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+#        - name: allow for given tcp port
+#          shell: iptables -A INPUT -p tcp -m tcp --dport {{item}} -j ACCEPT
+#          loop: "{{ allowd_tcp_ports | default([]) }}"
+#        - name: execute user iptables command
+#          shell: "{{item}}"
+#          loop: "{{user_iptables_rule | default([]) }}"
+#        - name: default policies for filter table
+#          shell: iptables -P {{item.key}} {{item.value}}
+#          loop: "{{ query('dict',default_policies | default({})) }}"
+
+- name: modity sshd config
+  hosts: drbd
+  gather_facts: false
+  tasks:
+    - name: disble root login
+      lineinfile:
+        path: /etc/ssh/sshd_config
+        regexp: 'Port test'
+        state: absent
+#        line: "#Port test"
+#        insertbefore: '^#Port 22'
+      notify: "restart sshd"
+  handlers:
+    - name: "restart sshd"
+      service:
+        name: sshd
+        state: restart
+
+
+
