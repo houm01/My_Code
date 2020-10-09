@@ -1,7 +1,7 @@
 ---
 
 - name: openstack-installation
-  hosts: os210
+  hosts: os20
   gather_facts: false
   roles:
     - openstack-installation

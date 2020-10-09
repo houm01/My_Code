@@ -1,7 +1,36 @@
 ---
 
-- name: change hostname
-  raw: "echo {{ hostname|quote }} > /etc/hostname"
+# todo: 重复执行 playbook 时，set hostname 很慢
+- name: set hostname
+  hostname:
+    name: "{{ inventory_hostname }}"
 
-- name: display hostname
-  shell: hostname 
+# todo: 正则表达式可以优化一下
+- name: modity hosts
+  replace:
+    path: /etc/hosts
+    regexp: '127.0.0.1 localhost\n127.0.1.1 .*'
+    replace: '127.0.0.1 localhost\n127.0.0.1 {{ inventory_hostname }}'
+
+- name: add DNS for each
+  lineinfile:
+    path: /etc/hosts
+    line: "{{ hostvars[item].ansible_host }} {{ hostvars[item].ansible_hostname }}"
+  when: item != inventory_hostname
+  loop: "{{ play_hosts }}"
+
+
+# 无需重启了，以下代码可能要删掉
+#- name: Restart server
+#  command: 'reboot'
+#  async: 1
+#  poll: 0
+#  ignore_errors: true
+#  become: true
+
+#- name: Wait for server to restart
+#  wait_for:
+#    timeout: 300
+#    port: 22
+#    delay: 10
+#    state: started

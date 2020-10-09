@@ -1,0 +1,246 @@
+---
+
+#- name: update cache
+#  apt:
+#    update_cache=yes
+#  when: ansible_distribution == "Ubuntu"
+
+- name: update yum cache
+  yum:
+    update_cache=yes
+#  when: ansible_distribution == "CentOS"
+
+#- apt_repository:
+#    repo: deb http://ubuntu-cloud.archive.canonical.com/ubuntu bionic-updates/train main
+#    state: present
+#  when: ansible_distribution == "Ubuntu"
+
+
+#- name: Upgrade all packages to the latest version
+#  apt:
+#    name: "*"
+#    state: latest
+#  when: ansible_distribution == "Ubuntu"
+
+
+# todo: 需要找找能不能改为模块执行
+# centos 8 enable power tools
+- name: enable power tools
+  command: yum config-manager --set-enabled PowerTools
+
+
+- name: install openstack package
+  yum:
+    name: centos-release-openstack-train
+    state: present
+
+- name: Upgrade all packages to the latest version
+  yum:
+    name: "*"
+    state: latest
+#  when: ansible_distribution == "CentOS"
+
+
+#- name: Update all packages to the latest version
+#  apt:
+#    upgrade: dist
+#
+#- name: install chrony/openstackclient/mariadb/pymysql via apt
+#  apt:
+#    pkg:
+#      - chrony
+#      - python3-openstackclient
+#      - mariadb-server
+#      - python-pymysql
+#      - rabbitmq-server
+#      - memcached
+#      - python-memcache
+#    state: present
+#  when: ansible_distribution == "Ubuntu"
+
+# todo: 拆分哪些是控制节点装的，哪些是其他节点装的
+- name: install chrony/openstackclient/mariadb/pymysql via apt
+  yum:
+    pkg:
+      - chrony
+      - python3-openstackclient
+      - mariadb-server
+      - python2-PyMySQL
+      - rabbitmq-server
+      - python3-memcached   # centos 8 安装 Python3-memcached，centos7 安装 python-memcached
+      - rabbitmq-server
+      - etcd
+      - memcached
+#      - python-memcache
+    state: present
+#  when: ansible_distribution == "CentOS"
+
+
+#- name: config chronyd
+#  replace:
+#    path: /etc/chrony/chrony.conf
+#    regexp: '^pool'
+#    replace: '#pool'
+
+- name: config chronyd
+  replace:
+    path: /etc/chrony.conf
+    regexp: '^pool'
+    replace: '#pool'
+#  when: ansible_distribution == "CentOS"
+
+#
+## TODO: allow 范围需要修改
+#- name: insert controller ntp server
+#  blockinfile:
+#    path: /etc/chrony/chrony.conf
+#    block: 'allow 0.0.0.0/0'
+#    insertafter: "#pool.*"
+#  when: inventory_hostname == "os210-controller"
+
+## TODO: allow 范围需要修改
+- name: insert controller ntp server
+  blockinfile:
+    path: /etc/chrony.conf
+    block: 'allow 0.0.0.0/0'
+    insertafter: "#pool.*"
+  when: inventory_hostname == "controller21"
+
+
+#
+#
+#- name: insert controller ntp server
+#  blockinfile:
+#    path: /etc/chrony/chrony.conf
+#    block: 'server ntp.aliyun.com iburst'
+#    insertafter: "#pool.*"
+#  when: inventory_hostname == "os210-controller"
+
+- name: insert controller ntp server
+  blockinfile:
+    path: /etc/chrony.conf
+    block: 'server ntp.aliyun.com iburst'
+    insertafter: "#pool.*"
+  when: inventory_hostname == "controller21"
+
+#
+## TODO: block 内应该做一个判断 `controller`
+#- name: modity other node ntp config
+#  blockinfile:
+#    path: /etc/chrony/chrony.conf
+#    block: 'server os210-controller iburst'
+#    insertafter: "#pool*"
+#  when: not(inventory_hostname == "os210-controller")
+
+## TODO: block 内应该做一个判断 `controller`
+- name: modity other node ntp config
+  blockinfile:
+    path: /etc/chrony.conf
+    block: 'server controller21 iburst'
+    insertafter: "#pool*"
+  when: not(inventory_hostname == "controller21")
+
+#
+- name: restart chronyd
+  service:
+    name: chronyd
+    state: restarted
+    enabled: yes
+
+#- name: copy mysql openstack.cnf
+#  copy:
+#    src: 99-openstack.cnf
+#    dest: /etc/mysql/mariadb.conf.d/
+#  when: inventory_hostname == "controller21"
+
+- name: copy mysql openstack.cnf
+  copy:
+    src: openstack.cnf
+    dest: /etc/my.cnf.d/
+  when: inventory_hostname == "controller21"
+
+
+
+#- name: modity openstack.cnf
+#  replace:
+#    path: /etc/mysql/mariadb.conf.d/99-openstack.cnf
+#    regexp: "10.0.0.11"
+#    replace: "{{ ansible_host }}"
+#  when: inventory_hostname == "os210-controller"
+
+- name: modity openstack.cnf
+  replace:
+    path: /etc/my.cnf.d/openstack.cnf
+    regexp: "10.0.0.11"
+    replace: "{{ ansible_host }}"
+  when: inventory_hostname == "controller21"
+
+
+# TODO: MySQL 初始化还是有问题，注释先不要取消
+# mysql_secure_installation
+#- name: update mariadb root password
+#  mysql_user:
+##    login_host: 172.19.10.210
+##    login_user: root
+#    name: root
+#    password: tyun123
+#    priv: '*.*:ALL'
+#    login_unix_socket: /var/run/mysqld/mysqld.sock
+#    state: present
+#  when: inventory_hostname == "os210-controller"
+#
+## remove anonymous users
+#- name: remove anonymous users
+#  mysql_user:
+#    user: ""
+##    host: 172.19.10.210
+#    login_unix_socket: /var/run/mysqld/mysqld.sock
+#    state: absent
+#  when: inventory_hostname == "os210-controller"
+
+- name: start rabbitmq-server
+  service:
+    name: rabbitmq-server
+    state: restarted
+    enabled: yes
+  when: inventory_hostname == "controller21"
+
+# todo: 将密码设置为变量,
+#- name: add user
+#  command:
+#    cmd: rabbitmqctl add_user openstack tyun123
+#  when: inventory_hostname == "controller21"
+
+#- name: set permi
+#  command:
+#    cmd: rabbitmqctl set_permissions openstack ".*" ".*" ".*"
+#  when: inventory_hostname == "controller21"
+
+
+- name: modity memcached config
+  replace:
+    path: /etc/sysconfig/memcached
+    regexp: 127.0.0.1
+    replace: "{{ ansible_host }}"
+  when: inventory_hostname == "controller21"
+
+- name: restart memcached
+  service:
+    name: memcached.service
+    state: restarted
+    enabled: yes
+  when: inventory_hostname == "controller21"
+
+- name: copy etcd config
+  copy:
+    src: etcd.conf
+    dest: /etc/etcd/
+    backup: yes
+  when: inventory_hostname == "controller21"
+
+- name: modity etcd
+  replace:
+    path: /etc/etcd/etcd.conf
+    regexp: "10.0.0.11"
+    replace: "{{ ansible_host }}"
+  when: inventory_hostname == "controller21"

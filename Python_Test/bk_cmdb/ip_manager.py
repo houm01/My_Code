@@ -6,7 +6,6 @@
 import requests
 import json
 
-
 url = 'http://paas.bk.tyun.cn:80/api/c/compapi/v2/cc/search_business/'
 
 data = {
