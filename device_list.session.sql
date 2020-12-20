@@ -1,0 +1,1 @@
+UPDATE device_list set vpn='https://bd90vpn.tyun.cn' WHERE id='48';

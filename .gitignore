@@ -107,6 +107,7 @@ python_project/iTerm2_login/
 .DS*
 python_project/.DS_Store
 python_project/cloud_daily_test/.DS_Store
+python_project/box/
 **/config.ini
 shell/sk.sh
 shell/login_office_sslvpn.sh
